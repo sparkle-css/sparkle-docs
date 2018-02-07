@@ -1,1 +1,1 @@
-"# Sparkle Documentation" 
+# Sparkle Documentation
