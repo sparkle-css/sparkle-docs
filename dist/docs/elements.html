@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Sparkle CSS Framework documentation site.">
+    <title>Sparkle | Docs</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@latest/dist/css/sparkle.min.css" rel="stylesheet">
+    <link href="../../templates/style/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__brand"><a href="#">
+            <h6>sparkle<span class="nav__brand__ext">css</span></h6></a></div>
+        <ul class="nav__menu nav__menu--left">
+          <li class="nav__menu__item"><a href="start.html">Home</a></li>
+          <li class="nav__menu__item"><a href="components.html">Documentation</a></li>
+          <li class="nav__menu__item"><a href="#">Themes</a></li>
+        </ul>
+        <ul class="nav__menu nav__menu--right">
+          <li class="nav__menu__item nav__menu__item--special"><a href="https://github.com/jdriviere/sparkle-css" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+        </ul>
+        <div class="nav__mobile">
+          <div class="nav__mobile__icon"><span></span><span></span><span></span></div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+      <aside class="column column--2-of-12 menu">
+        <p class="menu__tag">Getting Started</p>
+        <ul class="menu__list">
+          <li class="menu__list__item"><a href="#">Introduction</a></li>
+          <li class="menu__list__item"><a href="#">Installation</a></li>
+          <li class="menu__list__item"><a href="#">Modules</a></li>
+        </ul>
+        <p class="menu__tag">Components</p>
+        <ul class="menu__list">
+          <li class="menu__list__item"><a href="#">Blockquotes</a></li>
+          <li class="menu__list__item"><a href="#">Grid</a></li>
+          <li class="menu__list__item"><a href="#">Tables</a></li>
+          <li class="menu__list__item"><a href="#">Typography</a></li>
+        </ul>
+        <p class="menu__tag">Elements</p>
+        <ul class="menu__list">
+          <li class="menu__list__item"><a href="#">Alerts</a></li>
+          <li class="menu__list__item"><a href="#">Buttons</a></li>
+          <li class="menu__list__item"><a href="#">Cards</a></li>
+          <li class="menu__list__item"><a href="#">Inputs</a></li>
+          <li class="menu__list__item"><a href="#">Media (Box)</a></li>
+          <li class="menu__list__item"><a href="#">Menu</a></li>
+          <li class="menu__list__item"><a href="#">Modals</a></li>
+          <li class="menu__list__item"><a href="#">Tags</a></li>
+        </ul>
+        <p class="menu__tag">Extra</p>
+        <ul class="menu__list">
+          <li class="menu__list__item"><a href="#">Utilities</a></li>
+        </ul>
+      </aside>
+      <main class="col-10-of-12">
+        <div class="hero">
+          <div class="hero__header">
+            <h2 class="text--title text--theme">Elements</h2>
+            <h4 class="text--subtitle">The fully customized and customizable parts of the framework.</h4>
+          </div>
+          <div class="hero__content">
+            <h4 class="text--theme">Alerts</h4>
+            <p class="text--paragraph">
+              Alerts can serve to make sure users can see important messages on their screen.
+              Simply create a block of code and stylize it accordingly. Start off by adding
+              an <strong>alert</strong> class to a &lt;div&gt; tag, and then specify which
+              type of alert you want by adding the second class, <strong>alert--$type</strong>,
+              where <strong>$type</strong> is either one of the following:
+              <strong>default</strong>,
+              <strong>info</strong>,
+              <strong>success</strong>,
+              <strong>warning</strong>,
+              or <strong>danger</strong>.
+              
+            </p>
+            <div class="row">
+              <div class="col">
+                <h4 class="hero__feature">Example:</h4>
+                <alert class="alert alert--default">This is a default alert.</alert>
+                <alert class="alert alert--info">This is an info alert.</alert>
+                <alert class="alert alert--success">This is a success alert.</alert>
+                <alert class="alert alert--warning">This is a warning alert.</alert>
+                <alert class="alert alert--danger">This is a danger alert.</alert>
+              </div>
+              <div class="col">
+                <div class="sticker"><code>
+                    &lt;alert class="<strong>alert [alert--$type]</strong>"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;// Body of Element<br>
+                    &lt;/alert&gt;
+                    </code></div>
+              </div>
+            </div>
+            <h4 class="text--theme">Buttons</h4>
+            <p class="text--paragraph">
+              One of the most essential elements in a CSS framework: buttons. Sparkle allows you
+              to style anchor tags, div tags, and buttons by simply putting <strong>button</strong>
+              in its class. This is also the first step to style a button accordingly (see other styling below).
+              
+            </p>
+            <div class="row">
+              <div class="col">
+                <h4 class="hero__feature">Example:</h4>
+                <div class="button__group">
+                  <input class="button" type="button" value="Button"><a class="button" href="#">Button</a>
+                  <button class="button">Button</button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="sticker"><code>
+                    &lt;input type="button" class="<strong>button [button--$type]</strong>" value=""&gt;<br>
+                    &lt;a href="#" class="<strong>button [button--$type]</strong>"&gt;&lt;/a&gt;<br>
+                    &lt;button class="<strong>button [button--$type]</strong>&gt;&lt;/button&gt;<br>
+                    </code></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h4 class="hero__feature">Example:</h4>
+                <div class="button">Default</div>
+                <div class="button button--primary">Primary</div>
+                <div class="button button--secondary">Secondary</div>
+                <div class="button button--success">Success</div>
+                <div class="button button--warning">Warning</div>
+                <div class="button button--danger">Danger</div>
+                <div class="button button--light">Light</div>
+                <div class="button button--dark">Dark</div>
+              </div>
+              <div class="col">
+                <div class="sticker"><code>
+                    &lt;button class="<strong>button</strong>&gt;Button&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--primary</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--secondary</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--success</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--warning</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--danger</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--light</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--dark</strong>&gt;&lt;/button&gt;<br>
+                    </code></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h4 class="hero__feature">Example:</h4>
+                <div class="button button--primary--outline">Primary</div>
+                <div class="button button--secondary--outline">Secondary</div>
+                <div class="button button--success--outline">Success</div>
+                <div class="button button--warning--outline">Warning</div>
+                <div class="button button--danger--outline">Danger</div>
+                <div class="button button--light--outline">Light</div>
+                <div class="button button--dark--outline">Dark</div>
+              </div>
+              <div class="col">
+                <div class="sticker"><code>
+                    &lt;button class="<strong>button button--primary--outline</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--secondary--outline</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--success--outline</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--warning--outline</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--danger--outline</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--light--outline</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--dark--outline</strong>&gt;&lt;/button&gt;<br>
+                    </code></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h4 class="hero__feature">Example:</h4>
+                <div class="button button--primary--ghost">Primary</div>
+                <div class="button button--secondary--ghost">Secondary</div>
+                <div class="button button--success--ghost">Success</div>
+                <div class="button button--warning--ghost">Warning</div>
+                <div class="button button--danger--ghost">Danger</div>
+                <div class="button button--light--ghost">Light</div>
+                <div class="button button--dark--ghost">Dark</div>
+              </div>
+              <div class="col">
+                <div class="sticker"><code>
+                    &lt;button class="<strong>button button--primary--ghost</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--secondary--ghost</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--success--ghost</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--warning--ghost</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--danger--ghost</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--light--ghost</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--dark--ghost</strong>&gt;&lt;/button&gt;<br>
+                    </code></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h4 class="hero__feature">Example:</h4>
+                <div class="button__group">
+                  <div class="button button--xsmall">X-Small</div>
+                  <div class="button button--small">Small</div>
+                  <div class="button button--medium">Medium</div>
+                  <div class="button button--large">Large</div>
+                  <div class="button button--xlarge">X-Large</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="sticker"><code>
+                    &lt;button class="<strong>button button--xsmall</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--small</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--medium</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--large</strong>&gt;&lt;/button&gt;<br>
+                    &lt;button class="<strong>button button--xlarge</strong>&gt;&lt;/button&gt;<br>
+                    </code></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h4 class="hero__feature">Example:</h4>
+                <div class="button button--block">Block</div>
+              </div>
+              <div class="col">
+                <div class="sticker"><code>
+                    &lt;button class="<strong>button button--block</strong>&gt;&lt;/button&gt;<br>
+                    </code></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@latest/dist/js/sparkle.min.js"></script>
+      </main>
+    </div>
+  </body>
+</html>
