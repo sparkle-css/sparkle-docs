@@ -1,4 +1,6 @@
 # Folders
-dev/ 
+dev/
+dist/docs/includes/
+node_modules/
 
 # Files
