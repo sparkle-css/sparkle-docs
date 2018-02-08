@@ -1,0 +1,109 @@
+/* SPECIAL SPARKLE OVERRIDES */
+.nav__brand__ext {
+  opacity: 0.75;
+}
+
+.menu {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tag {
+  position: relative;
+  margin-top: 1.0rem;
+}
+
+.tag:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.button__group {
+  margin: 10px 0 0;
+}
+
+.button__group > .button {
+  margin: 0 5px;
+}
+
+.button__group > .button:first-child {
+  margin-left: 0;
+}
+
+ol {
+  margin-left: 1.5rem;
+}
+
+.icon--size {
+  font-size: 3.0rem;
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+
+.hero__header {
+  padding: 2.0rem 0 3.0rem;
+}
+
+.hero__content {
+  padding: 3.0rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.hero__feature {
+  margin-bottom: 1.0rem;
+  font-size: 2.0rem;
+  font-weight: 700;
+}
+
+.hero__footer {
+  padding: 2.0rem 0 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Stickers */
+.sticker {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  padding: 3.0rem 1.0rem 2.0rem;
+  background: #E2E2E2;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-top: 2px solid #999;
+  overflow: auto;
+  white-space: wrap;
+  word-wrap: break-word;
+  tab-size: 4;
+}
+
+.sticker:before {
+  content: "Code";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding: 5px;
+  background: #999;
+  color: #FFF;
+  font-size: 1.0rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.sticker::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+.sticker::-webkit-scrollbar-track {
+  background-color: #CCC;
+}
+
+.sticker::-webkit-scrollbar-thumb {
+  background-color: #999;
+}

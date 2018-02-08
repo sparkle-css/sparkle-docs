@@ -17,7 +17,7 @@ gulp.task('sassify', function() {
         .pipe(sass({ outputStyle: 'expanded' })
             .on('error', sass.logError)
         )
-		.pipe(gulp.dest('dist/styles/main.css'))
+		.pipe(gulp.dest('dist/styles/'))
         .pipe(browserSync.reload({ stream: true }));
 });
 
