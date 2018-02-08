@@ -1,6 +1,8 @@
 # Folders
 dev/
 dist/docs/includes/
+includes/
+partials/
 node_modules/
 
 # Files
