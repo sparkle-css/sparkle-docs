@@ -4,3 +4,4 @@ dist/docs/includes/
 node_modules/
 
 # Files
+*.pug
