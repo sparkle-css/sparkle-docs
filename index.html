@@ -1,247 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Sparkle CSS Framework documentation site.">
-  <title>Sparkle | Docs</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@1.9.2/dist/css/sparkle.min.css" rel="stylesheet">
-  <link href="dist/styles/main.css" rel="stylesheet">
-</head>
-
-<body>
-  <!-- NAV -->
-  <header>
-    <nav class="nav">
-      <div class="nav__brand">
-        <a href="https://jdriviere.github.io/sparkle-css">
-          <h6>sparkle<span class="nav__brand__ext">css</span></h6>
-        </a>
-      </div>
-
-      <!-- NAV MENU -->
-      <ul class="nav__menu">
-        <li class="nav__menu__item"><a href="https://jdriviere.github.io/sparkle-css">Home</a></li>
-        <li class="nav__menu__item nav__menu__item--active"><a href="index.html">Get Started</a></li>
-        <li class="nav__menu__item"><a href="#">Documentation</a></li>
-        <li class="nav__menu__item"><a href="#">Themes</a></li>
-      </ul>
-      
-      <!-- NAV MENU (RIGHT) -->
-      <ul class="nav__menu nav__menu--right">
-        <li class="nav__menu__item"><a href="#">Download</a></li>
-        <li class="nav__menu__item nav__menu__item--special">
-          <a href="https://github.com/jdriviere/sparkle-css" target="_blank">
-            <i class="fa fa-github fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-      
-      <!-- MOBILE ICON -->
-      <div class="nav__mobile">
-        <div class="nav__mobile__icon">
-          <span></span>
-          <span></span>
-          <span></span>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Sparkle CSS Framework documentation site.">
+    <title>Sparkle | Get Started</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@1.9.2/dist/css/sparkle.min.css" rel="stylesheet">
+    <link href="dist/styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__brand"><a href="https://jdriviere.github.io/sparkle-css">
+            <h6>sparkle<span class="nav__brand__ext">css</span></h6></a></div>
+        <ul class="nav__menu nav__menu--left">
+          <li class="nav__menu__item"><a href="https://jdriviere.github.io/sparkle-css">Home</a></li>
+          <li class="nav__menu__item nav__menu__item--active"><a href="./">Get Started</a></li>
+          <li class="nav__menu__item"><a href="#">Documentation</a></li>
+          <li class="nav__menu__item"><a href="#">Themes</a></li>
+        </ul>
+        <ul class="nav__menu nav__menu--right">
+          <li class="nav__menu__item nav__menu__item--special"><a href="https://github.com/jdriviere/sparkle-css" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+        </ul>
+        <div class="nav__mobile">
+          <div class="nav__mobile__icon"><span></span><span></span><span></span></div>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="grid">
-    <!-- SIDE -->
-    <aside class="column column--2-of-12 menu">
-      <p class="menu__tag">Getting Started</p>
-      <ul class="menu__list">
-        <li class="menu__list__item"><a href="#">Introduction</a></li>
-        <li class="menu__list__item"><a href="#">Installation</a></li>
-        <li class="menu__list__item"><a href="#">Modules</a></li>
-      </ul>
-      
-      <p class="menu__tag">Components</p>
-      <ul class="menu__list">
-        <li class="menu__list__item"><a href="#">Blockquotes</a></li>
-        <li class="menu__list__item"><a href="#">Grid</a></li>
-        <li class="menu__list__item"><a href="#">Tables</a></li>
-        <li class="menu__list__item"><a href="#">Typography</a></li>
-      </ul>
-      
-      <p class="menu__tag">Elements</p>
-      <ul class="menu__list">
-        <li class="menu__list__item"><a href="#">Alerts</a></li>
-        <li class="menu__list__item"><a href="#">Buttons</a></li>
-        <li class="menu__list__item"><a href="#">Inputs</a></li>
-        <li class="menu__list__item"><a href="#">Tags</a></li>
-      </ul>
-
-      <p class="menu__tag">Layouts</p>
-      <ul class="menu__list">
-        <li class="menu__list__item"><a href="#">Cards</a></li>
-        <li class="menu__list__item"><a href="#">Grid</a></li>
-        <li class="menu__list__item"><a href="#">Media Box</a></li>
-        <li class="menu__list__item"><a href="#">Menu</a></li>
-        <li class="menu__list__item"><a href="#">Modals</a></li>
-      </ul>
-
-      <p class="menu__tag">Extra</p>
-      <ul class="menu__list">
-        <li class="menu__list__item">
-          <a href="#">Utilities</a>
-        </li>
-      </ul>
-    </aside>
-
-    <!-- MAIN -->
-    <section class="column column--10-of-12">
-      <div class="wrapper">
-        <div class="hero">
-          <!-- HERO HEADER -->
-          <div class="hero__header">
-            <h2 class="text--title text--theme">Welcome to Sparkle Documentation!</h2>
-            <h4 class="text--subtitle">Get everything you need to get started with Sparkle!</h4>
-            
-            <!-- TAGS -->
-            <span class="tag tag--primary"><strong>sparkle.css</strong></span>
-            <span class="tag tag--warning"><strong>v1.9.2</strong></span>
-            <span class="tag tag--success"><strong>new</strong></span>
-            <span class="tag tag--info"><strong>docs</strong></span>
-          </div>
-
-          <!-- HERO CONTENT -->
-          <div class="hero__content">
-            <h4 class="text--theme">Why Sparkle?</h4>
-            <div class="grid grid--gutter">
-              <div class="column column--1-of-4">
-                <div class="text--centered text--theme">
-                  <i class="fa fa-folder-open-o icon--size"></i>
-                  <p class="hero__feature">It's Lightweight</p>
-                </div>
-              </div>
-              <div class="column column--1-of-4">
-                <div class="text--centered text--theme">
-                  <i class="fa fa-thumbs-o-up icon--size"></i>
-                  <p class="hero__feature">It's User-Friendly</p>
-                </div>
-              </div>
-              <div class="column column--1-of-4">
-                <div class="text--centered text--theme">
-                  <i class="fa fa-mobile-phone icon--size">&nbsp;</i>
-                  <i class="fa fa-laptop fa-2x icon--size">&nbsp;</i>
-                  <i class="fa fa-desktop icon--size"></i>
-                  <p class="hero__feature">It's Mobile-First</p>
-                </div>
-              </div>
-              <div class="column column--1-of-4">
-                <div class="text--centered text--theme">
-                  <i class="fa fa-share-alt icon--size"></i>
-                  <p class="hero__feature">It's Open-Source</p>
-                </div>
-              </div>
+      </nav>
+    </header>
+    <div class="grid">
+      <aside class="column column--2-of-12 menu">
+        <p class="menu__tag">Getting Started</p>
+        <ul class="menu__list">
+          <li class="menu__list__item"><a href="#">Introduction</a></li>
+          <li class="menu__list__item"><a href="#">Installation</a></li>
+          <li class="menu__list__item"><a href="#">Modules</a></li>
+        </ul>
+        <p class="menu__tag">Components</p>
+        <ul class="menu__list">
+          <li class="menu__list__item"><a href="#">Blockquotes</a></li>
+          <li class="menu__list__item"><a href="#">Grid</a></li>
+          <li class="menu__list__item"><a href="#">Tables</a></li>
+          <li class="menu__list__item"><a href="#">Typography</a></li>
+        </ul>
+        <p class="menu__tag">Elements</p>
+        <ul class="menu__list">
+          <li class="menu__list__item"><a href="#">Alerts</a></li>
+          <li class="menu__list__item"><a href="#">Buttons</a></li>
+          <li class="menu__list__item"><a href="#">Cards</a></li>
+          <li class="menu__list__item"><a href="#">Inputs</a></li>
+          <li class="menu__list__item"><a href="#">Media (Box)</a></li>
+          <li class="menu__list__item"><a href="#">Menu</a></li>
+          <li class="menu__list__item"><a href="#">Modals</a></li>
+          <li class="menu__list__item"><a href="#">Tags</a></li>
+        </ul>
+        <p class="menu__tag">Extra</p>
+        <ul class="menu__list">
+          <li class="menu__list__item"><a href="#">Utilities</a></li>
+        </ul>
+      </aside>
+      <main class="column column--10-of-12">
+        <div class="wrapper">
+          <div class="hero">
+            <div class="hero__header">
+              <h2 class="text--title text--theme">Welcome to Sparkle Documentation!</h2>
+              <h4 class="text--subtitle">Get everything you need to get started with Sparkle!</h4><span class="tag tag--primary"><strong>sparkle.css</strong></span><span class="tag tag--success"><strong>v1.9.2</strong></span><span class="tag tag--info"><strong>docs</strong></span><span class="tag tag--success"><strong>v0.1.0</strong></span>
             </div>
-
-            <h4 class="text--theme">Getting Started</h4>
-            <p class="text--paragraph">
-              There are many ways to import Sparkle into your development folder, each way being simple and easy to follow.
-            </p>
-
-            <div class="grid grid--gutter">
-              <div class="column column--half">
-                <p class="hero__feature">Install through Bower</p>
-                <p class="text--paragraph">
-                  This is the favorable way, if you wish to dig deep within the developmental folders of Sparkle and completely customize it.
-                  Just follow these steps:
-                </p>
-                <ol>
-                  <li>Run the following command.</li>
-                  <li>
-                    Link the .css or .min.css file, as well as the .js or .min.js files located in the respective folders, found in your bower_components
-                    folder.
-                  </li>
-                  <li>Enjoy!</li>
-                </ol>
-              </div>
-
-              <!-- CODE -->
-              <div class="column column--half">
-                <div class="sticker">
-                  <code>bower install sparkle.css</code>
+            <div class="hero__content">
+              <h4 class="text--theme">Why Sparkle?</h4>
+              <div class="grid grid--gutter">
+                <div class="column column--1-of-4">
+                  <div class="text--centered text--theme"><i class="fa fa-folder-open-o icon--size"></i>
+                    <p class="hero__feature">It's Lightweight</p>
+                  </div>
+                </div>
+                <div class="column column--1-of-4">
+                  <div class="text--centered text--theme"><i class="fa fa-thumbs-o-up icon--size"></i>
+                    <p class="hero__feature">It's User-Friendly</p>
+                  </div>
+                </div>
+                <div class="column column--1-of-4">
+                  <div class="text--centered text--theme"><i class="fa fa-mobile-phone icon--size">&nbsp;</i><i class="fa fa-laptop fa-2x icon--size">&nbsp;</i><i class="fa fa-desktop icon--size"></i>
+                    <p class="hero__feature">It's Mobile-First</p>
+                  </div>
+                </div>
+                <div class="column column--1-of-4">
+                  <div class="text--centered text--theme"><i class="fa fa-share-alt icon--size"></i>
+                    <p class="hero__feature">It's Open-Source</p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="grid grid--gutter">
-              <div class="column column--half">
-                <p class="hero__feature">Install through CDN</p>
-                <p class="text--paragraph">
-                  You can also install the latest (master) release of the framework. Simply link your stylesheet and script source to the appropriate
-                  links.
-                </p>
-                <p class="text--thick">Note:
-                  <span class="text--paragraph">
-                    If you wish to install the latest developmental version of Sparkle, just replace the @[VERSION] with @latest.
-                  </span>
-                </p>
-              </div>
-
-              <!-- CODE -->
-              <div class="column column--half">
-                <div class="sticker">
-                  <code>https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@[VERSION]/dist/css/sparkle.min.css</code>
-                  <br>
-                  <br>
-                  <code>https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@[VERSION]/dist/js/sparkle.min.js</code>
-                  <br>
-                  <br>
-                  <code><strong>Note: You must have both properly linked for the framework to function properly.</strong></code>
+              <h4 class="text--theme">Getting Started</h4>
+              <p class="text--paragraph">
+                There are many ways to import Sparkle into your development folder,
+                each way being simple and easy to follow.
+                
+              </p>
+              <div class="grid grid--gutter">
+                <div class="column column--half">
+                  <p class="hero__feature">Install through Bower</p>
+                  <p class="text--paragraph">
+                    This is the favorable way, if you wish to dig deep within the
+                    developmental folders of Sparkle and completely customize it.
+                    Just follow these steps:
+                  </p>
+                  <ol>
+                    <li>Run the following command.</li>
+                    <li>
+                      Link the .css or .min.css file, as well as the .js or .min.js files
+                      located in the respective folders, found in your bower_components folder.
+                    </li>
+                    <li>Enjoy!</li>
+                  </ol>
+                </div>
+                <div class="column column--half">
+                  <div class="sticker"><code>bower install sparkle.css</code></div>
                 </div>
               </div>
-            </div>
-
-            <div class="grid grid--gutter">
-              <div class="column column--half">
-                <p class="hero__feature">Install through Git Repo</p>
-                <p class="text--paragraph">
-                  Go to the following link(s) and download the files you wish to use. It is also an alternative way of ensuring to have the
-                  latest developmental version of Sparkle. Or you can simply surf around and download any other version of
-                  Sparkle that is available.
-                </p>
-                <p class="text--thick">Note:
-                  <span class="text--paragraph">
-                    This one is especially recommended, if you intend to contribute to this project.
-                  </span>
-                </p>
-              </div>
-
-              <!-- CODE -->
-              <div class="column column--half">
-                <div class="sticker">
-                  <code>https://github.com/jdriviere/sparkle-css/dist/css/sparkle.min.css</code>
-                  <br>
-                  <br>
-                  <code>https://github.com/jdriviere/sparkle-css/dist/js/sparkle.min.js</code>
+              <div class="grid grid--gutter">
+                <div class="column column--half">
+                  <p class="hero__feature">Install through CDN</p>
+                  <p class="text--paragraph">
+                    You can also install the latest (master) release of the framework.
+                    Simply link your stylesheet and script source to the appropriate
+                    links.
+                  </p>
+                  <p class="text--thick">Note:<span class="text--paragraph">
+                      If you wish to install the latest developmental version of Sparkle,
+                      just replace the @[VERSION] with @latest.
+                      </span></p>
+                </div>
+                <div class="column column--half">
+                  <div class="sticker"><code>https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@[VERSION]/dist/css/sparkle.min.css</code><br><br><code>https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@[VERSION]/dist/js/sparkle.min.js</code><br><br><code><strong>Note: You must have both properly linked for the framework to function properly.</strong></code></div>
                 </div>
               </div>
-            </div>
-
-            <!-- MODULES -->
-            <h4 class="text--theme">Modules</h4>
-            <p class="text--paragraph">Coming soon...
-
-              <!-- HERO FOOTER -->
-              <div class="hero__footer">
-                <p class="text--small">Using Sparkle's <span class="text--thick text--theme"> Sparkle Theme</span></p>
-                <p class="text--small"><i class="fa fa-code text--thick"></i> by J. Djimitry Riviere</p>
+              <div class="grid grid--gutter">
+                <div class="column column--half">
+                  <p class="hero__feature">Install through Git Repo</p>
+                  <p class="text--paragraph">
+                    Go to the following link(s) and download the files you wish to use.
+                    It is also an alternative way of ensuring to have the latest developmental
+                    version of Sparkle. Or you can simply surf around and download any other
+                    version of Sparkle that is available.
+                  </p>
+                  <p class="text--thick">Note:<span class="text--paragraph">
+                      This one is especially recommended, if you intend to contribute to this
+                      project.
+                      </span></p>
+                </div>
+                <div class="column column--half">
+                  <div class="sticker"><code>https://github.com/jdriviere/sparkle-css/dist/css/sparkle.min.css</code><br><br><code>https://github.com/jdriviere/sparkle-css/dist/js/sparkle.min.js</code></div>
+                </div>
               </div>
-            </p>
+              <h4 class="text--theme">Modules</h4>
+              <p class="text--paragraph">Coming soon...
+                <div class="hero__footer">
+                  <p class="text--small">Using Sparkle's<span class="text--thick text--theme">   Sparkle Theme</span></p>
+                  <p class="text--small"><i class="fa fa-code text--thick"></i>  by J. Djimitry Riviere</p>
+                </div>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@1.9.2/dist/js/sparkle.min.js"></script>
-</body>
-
+      </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@1.9.2/dist/js/sparkle.min.js"></script>
+  </body>
 </html>
