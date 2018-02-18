@@ -22,23 +22,23 @@ gulp.task('sassify', function() {
 });
 
 // RENDER HTML FILES
-gulp.task('pug', function buildHTML() {
-    return gulp.src('dev/*.pug')
+gulp.task('pug:index', function buildHTML() {
+    return gulp.src('./index.pug')
         .pipe(
             pug({ pretty: true })
         )
-        .pipe(gulp.dest('dist/docs/'))
-        .pipe(browserSync.reload({ stream: true })); // <-- Remove if it doesn't work
+        .pipe(gulp.dest('./'))
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 // CREATE SERVER
-gulp.task('serve', ['pug', 'sassify'], function() {
+gulp.task('serve', ['pug:index', 'sassify'], function() {
     browserSync.init({
-        server: "./dist/"
+        server: "./"
     });
 
     gulp.watch(['dev/styles/sass/main.sass'], ['sassify']);
-    gulp.watch(['dev/**/*.pug'], ['pug']);
+    gulp.watch(['index.pug'], ['pug:index']);
     gulp.watch("docs/*.html").on('change', browserSync.reload);
 });
 
