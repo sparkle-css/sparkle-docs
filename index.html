@@ -35,10 +35,10 @@
     </header>
     <main class="column column--full">
       <div class="hero">
-        <div class="wrapper">
-          <div class="hero__header">
+        <div class="hero__header">
+          <div class="wrapper">
             <h2 class="text--title">Welcome to Sparkle Documentation!</h2>
-            <h4>Get everything you need to get started with Sparkle!</h4><span class="tag tag--primary"><strong>sparkle.css</strong></span><span class="tag"><strong>v1.9.4</strong></span><span class="tag tag--dark"><strong>docs</strong></span><span class="tag"><strong>v0.1.0</strong></span>
+            <h4>Get everything you need to get started with Sparkle!</h4><span class="tag tag--primary"><strong>docs</strong></span><span class="tag tag--dark"><strong>v0.1.0</strong></span>
           </div>
         </div>
         <div class="hero__content">
@@ -49,8 +49,8 @@
               each way being simple and easy to follow.
             </p><br>
             <div class="grid grid--gutter">
-              <div class="column column--third">
-                <p class="hero__feature">Install through Bower</p>
+              <div class="column column--third hero__feature">
+                <p class="hero__feature__title">Install through Bower</p>
                 <p>
                   This is the favorable way, if you wish to dig deep within the
                   developmental folders of Sparkle and completely customize it.
@@ -62,36 +62,41 @@
                     Link the .css or .min.css file, as well as the .js or .min.js files
                     located in the respective folders, found in your bower_components folder.
                   </li>
+                  <li>
+                    Make sure to include the latest jQuery library, in your script section, as
+                    well as FontAwesome v4.7.0 link into your HTML file for optimum functionality,
+                    as Sparkle currently uses both.
+                  </li>
                   <li>Enjoy!</li>
                 </ol>
                 <div class="sticker"><code>bower install sparkle.css</code></div>
               </div>
-              <div class="column column--third">
-                <p class="hero__feature">Install through CDN</p>
+              <div class="column column--third hero__feature">
+                <p class="hero__feature__title">Install through CDN</p>
                 <p>
                   You can also install the latest (master) release of the framework.
                   Simply link your stylesheet and script source to the appropriate
                   links.
                 </p>
-                <p class="text--thick">Note:<span>
+                <p><span class="text--thick">Note:   </span><span>
                     If you wish to install the latest developmental version of Sparkle,
                     just replace the @[VERSION] with @latest.
                     </span></p>
-                <div class="sticker"><code>&lt;link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/&gt;</code><br><code>&lt;link href="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@[VERSION]/dist/css/sparkle.min.css" rel="stylesheet"&gt;</code><br><br><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;</code><br><code>&lt;script src="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@[VERSION]/dist/js/sparkle.min.js"&gt;&lt;/script&gt;</code><br><br><code><strong>Note: You must have both properly linked for the framework to function properly.</strong></code></div>
+                <div class="sticker"><code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/&gt;</code><br><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@[VERSION]/dist/css/sparkle.min.css"&gt;</code><br><br><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;</code><br><code>&lt;script src="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@[VERSION]/dist/js/sparkle.min.js"&gt;&lt;/script&gt;</code><br><br><code><strong>Note: You must have all the proper links in the HTML file for the framework to function properly.</strong></code></div>
               </div>
-              <div class="column column--third">
-                <p class="hero__feature">Install through Git Repo</p>
+              <div class="column column--third hero__feature">
+                <p class="hero__feature__title">Install through Git Repo</p>
                 <p>
                   Go to the following link(s) and download the files you wish to use.
                   It is also an alternative way of ensuring to have the latest developmental
                   version of Sparkle. Or you can simply surf around and download any other
                   version of Sparkle that is available.
                 </p>
-                <p class="text--thick">Note:<span>
+                <p><span class="text--thick">Note:</span><span>
                     This one is especially recommended, if you intend to contribute to this
                     project.
                     </span></p>
-                <div class="sticker"><code>https://github.com/jdriviere/sparkle-css/dist/css/sparkle.min.css</code><br><br><code>https://github.com/jdriviere/sparkle-css/dist/js/sparkle.min.js</code></div>
+                <div class="sticker"><code>https://github.com/jdriviere/sparkle-css/</code></div>
               </div>
             </div>
           </div>
