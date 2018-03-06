@@ -1,41 +1,3 @@
-/* SPECIAL SPARKLE OVERRIDES */
-.nav__brand__ext {
-  opacity: 0.75;
-}
-
-.menu {
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.tag {
-  position: relative;
-  margin-top: 1.0rem;
-}
-
-.tag:not(:first-child) {
-  margin-left: 0.5rem;
-}
-
-.button__group {
-  margin: 10px 0 0;
-}
-
-.button__group > .button {
-  margin: 0 5px;
-}
-
-.button__group > .button:first-child {
-  margin-left: 0;
-}
-
-ol {
-  margin-left: 1.5rem;
-}
-
-.icon--size {
-  font-size: 3.0rem;
-}
-
 /* HERO */
 .hero {
   width: 100%;
@@ -53,8 +15,8 @@ ol {
 .hero__content {
   padding: 5.0em 0;
   background: #FBFBFD;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 0.5px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
 
 .hero__feature {
