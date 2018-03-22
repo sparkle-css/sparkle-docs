@@ -31,14 +31,24 @@ gulp.task('pug:index', function buildHTML() {
         .pipe(browserSync.reload({ stream: true }));
 });
 
+gulp.task('pug:dev', function buildHTML() {
+    return gulp.src('./dev/*.pug')
+        .pipe(
+            pug({ pretty: true })
+        )
+        .pipe(gulp.dest('./docs/'))
+        .pipe(browserSync.reload({ stream: true }));
+});
+
 // CREATE SERVER
-gulp.task('serve', ['pug:index', 'sassify'], function() {
+gulp.task('serve', ['pug:index', 'pug:dev', 'sassify'], function() {
     browserSync.init({
         server: "./"
     });
 
     gulp.watch(['dev/styles/sass/main.sass'], ['sassify']);
     gulp.watch(['index.pug'], ['pug:index']);
+    gulp.watch(['dev/*.pug', ['pug:dev']]);
     gulp.watch("docs/*.html").on('change', browserSync.reload);
 });
 
