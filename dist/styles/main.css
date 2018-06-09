@@ -91,3 +91,9 @@
 .sticker::-webkit-scrollbar-thumb {
   background-color: #999;
 }
+
+/* COLUMNS */
+[class*=column].col__example p {
+  text-align: center;
+  border: 1px solid #CCC;
+}
