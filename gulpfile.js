@@ -25,7 +25,7 @@ gulp.task('sassify', function () {
 
 // RENDER HTML FILES
 gulp.task('pug:index', function buildHTML() {
-  return gulp.src('./index.pug')
+  return gulp.src('./dev/index.pug')
     .pipe(pug({
       pretty: true
     }))
