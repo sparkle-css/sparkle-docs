@@ -114,11 +114,9 @@
 @media screen and (min-width: 640px) {
   .menu {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 16.66667%;
     height: 100vh;
-    padding: 8.0rem 1.0rem;
+    padding: 3.0rem 1.0rem;
   }
 }
 
