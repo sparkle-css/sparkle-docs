@@ -104,8 +104,18 @@
 }
 
 .menu {
+  padding-top: 8.0rem;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
-  background: blue;
+}
+
+@media screen and (min-width: 640px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16.66667%;
+    height: 100vh;
+  }
 }
 
 .buttons > .button {
