@@ -13,11 +13,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="dist/img/icon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@1.9.9-beta.1/dist/css/sparkle.css">
-    <link rel="stylesheet" href="dist/styles/main.css">
   </head>
+  <link rel="stylesheet" href="../dist/styles/main.css">
   <body>
     <header>
-      <nav class="nav nav--fixed">
+      <nav class="nav">
         <input type="checkbox" id="nav__trigger">
         <label class="nav__toggle" for="nav__trigger"></label>
         <div class="nav__brand"><a href="https://jdriviere.github.io/sparkle-css"><img src="../dist/img/Logo_v2.png" alt="Sparkle_Logo"></a></div>
@@ -33,7 +33,7 @@
         </ul>
       </nav>
     </header>
-    <div class="grid make-gutters">
+    <div class="grid">
       <aside class="column make-2">
         <div class="menu">
           <h6 class="menu__label">Components</h6>
@@ -73,241 +73,259 @@
           </div>
           <div class="hero__content">
             <div class="wrapper">
-              <h4 class="text make-theme" id="alertBlock">Alerts</h4>
-              <p>
-                Alerts are used to display information on your screen. Depending on the type
-                of information you want to display (i.e.: danger, warning, success, info, etc.),
-                Sparkle allows you to style it accordingly. Simply add a <strong>alert</strong> class
-                to a &lt;div&gt; tag. Alerts can be normal or outlined.
-                
-              </p>
-              <div class="grid make-gutters">
-                <div class="column make-half">
-                  <h6 class="hero__feature">Normal:</h6>
-                  <div class="alert">This is a default alert.</div>
-                  <div class="alert make-primary">This is a primary alert.</div>
-                  <div class="alert make-info">This is an info alert.</div>
-                  <div class="alert make-success">This is a success alert.</div>
-                  <div class="alert make-warning">This is a warning alert.</div>
-                  <div class="alert make-danger">This is a danger alert.</div>
-                  <div class="alert make-light">This is a light alert.</div>
-                  <div class="alert make-dark">This is a dark alert.</div>
+              <div class="hero__section">
+                <h4 class="text make-theme" id="alertBlock">Alerts &nbsp;&nbsp;<span class="tag make-success">New!</span></h4>
+                <p>
+                  Alerts are used to display information on your screen. Depending on the type
+                  of information you want to display (i.e.: danger, warning, success, info, etc.),
+                  Sparkle allows you to style it accordingly. Simply add a <strong>alert</strong> class
+                  to a &lt;div&gt; tag. Alerts can be normal or outlined.
+                  
+                </p>
+                <div class="grid make-gutters">
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Normal:</h6>
+                    <div class="alert">This is a default alert.</div>
+                    <div class="alert make-primary">This is a primary alert.</div>
+                    <div class="alert make-info">This is an info alert.</div>
+                    <div class="alert make-success">This is a success alert.</div>
+                    <div class="alert make-warning">This is a warning alert.</div>
+                    <div class="alert make-danger">This is a danger alert.</div>
+                    <div class="alert make-light">This is a light alert.</div>
+                    <div class="alert make-dark">This is a dark alert.</div>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;div class="<strong>alert [make-$type]</strong>"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;// Body of Alert<br>
+                        &lt;/div&gt;
+                        </code></div>
+                  </div>
                 </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;div class="<strong>alert [make-$type]</strong>"&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;// Body of Alert<br>
-                      &lt;/div&gt;
-                      </code></div>
-                </div>
-              </div>
-              <div class="grid make-gutters">
-                <div class="column make-half">
-                  <h6 class="hero__feature">Outlined:</h6>
-                  <div class="alert make-primary make-outline">This is an outlined primary alert.</div>
-                  <div class="alert make-info make-outline">This is an outlined info alert.</div>
-                  <div class="alert make-success make-outline">This is an outlined success alert.</div>
-                  <div class="alert make-warning make-outline">This is an outlined warning alert.</div>
-                  <div class="alert make-danger make-outline">This is an outlined danger alert.</div>
-                  <div class="alert make-light make-outline">This is an outlined light alert.</div>
-                  <div class="alert make-dark make-outline">This is an outlined dark alert.</div>
-                </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;div class="<strong>alert make-$type make-outline</strong>"&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;// Body of Alert<br>
-                      &lt;/div&gt;
-                      </code></div>
-                </div>
-              </div>
-              <h4 class="text make-theme" id="bqBlock">Blockquotes</h4>
-              <p>
-                Sometimes, you just need to take a section from another source and quote it stylistically.
-                Sparkle fulfills that wish too! Simply add <strong>blockquote</strong> class to your &lt;blockquote&gt; tag.
-                And, as with many of this framework's features, it also has many different styles.
-                All you have to do is add <strong>make-$type</strong> to the &lt;blockquote&gt;
-                class list, where <strong>$type</strong> is either one of the following:
-                <strong>primary</strong>,
-                <strong>info</strong>,
-                <strong>success</strong>,
-                <strong>warning</strong>,
-                <strong>danger</strong>,
-                <strong>light</strong>,
-                or <strong>dark</strong>.
-                
-              </p>
-              <div class="grid make-gutters">
-                <div class="column make-half">
-                  <h6 class="hero__feature">Normal:</h6>
-                  <blockquote class="blockquote">This is a default blockquote.</blockquote>
-                  <blockquote class="blockquote make-primary">This is a primary blockquote.</blockquote>
-                  <blockquote class="blockquote make-info">This is an info blockquote.</blockquote>
-                  <blockquote class="blockquote make-success">This is a success blockquote.</blockquote>
-                  <blockquote class="blockquote make-warning">This is a warning blockquote.</blockquote>
-                  <blockquote class="blockquote make-danger">This is a danger blockquote.</blockquote>
-                </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;blockquote class="<strong>blockquote [make-$type]</strong>"&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;// Body of Blockquote<br>
-                      &lt;/blockquote&gt;
-                      </code></div>
+                <div class="grid make-gutters">
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Outlined:</h6>
+                    <div class="alert make-primary make-outline">This is an outlined primary alert.</div>
+                    <div class="alert make-info make-outline">This is an outlined info alert.</div>
+                    <div class="alert make-success make-outline">This is an outlined success alert.</div>
+                    <div class="alert make-warning make-outline">This is an outlined warning alert.</div>
+                    <div class="alert make-danger make-outline">This is an outlined danger alert.</div>
+                    <div class="alert make-light make-outline">This is an outlined light alert.</div>
+                    <div class="alert make-dark make-outline">This is an outlined dark alert.</div>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;div class="<strong>alert make-$type make-outline</strong>"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;// Body of Alert<br>
+                        &lt;/div&gt;
+                        </code></div>
+                  </div>
                 </div>
               </div>
-              <h4 class="text make-theme" id="btnBlock">Buttons</h4>
-              <p>
-                One of the most essential elements in a CSS framework: buttons. Sparkle allows you
-                to style anchor tags, div tags, and buttons by simply putting <strong>button</strong>
-                in its class. This is also the first step to style a button accordingly (see other styling below).
-                
-              </p>
-              <div class="grid make-gutters">
-                <div class="column make-half">
-                  <h6 class="hero__feature">Normal:</h6>
-                  <button class="button">Default</button>
-                  <button class="button make-primary">Primary</button>
-                  <button class="button make-info">Info</button>
-                  <button class="button make-success">Success</button>
-                  <button class="button make-warning">Warning</button>
-                  <button class="button make-danger">Danger</button>
-                  <button class="button make-light">Light</button>
-                  <button class="button make-dark">Dark</button>
-                </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;button class="<strong>button [make-$type]</strong>"&gt;Button&lt;/button&gt;
-                      </code></div>
-                </div>
-              </div>
-              <div class="grid make-gutters">
-                <div class="column make-half">
-                  <h6 class="hero__feature">Reversed:</h6>
-                  <button class="button make-primary make-reverse">Primary Reverse</button>
-                  <button class="button make-info make-reverse">Info Reverse</button>
-                  <button class="button make-success make-reverse">Success Reverse</button>
-                  <button class="button make-warning make-reverse">Warning Reverse</button>
-                  <button class="button make-danger make-reverse">Danger Reverse</button>
-                  <button class="button make-light make-reverse">Light Reverse</button>
-                  <button class="button make-dark make-reverse">Dark Reverse</button>
-                </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;button class="<strong>button make-$type make-reverse</strong>"&gt;Button&lt;/button&gt;
-                      </code></div>
+              <div class="hero__section">
+                <h4 class="text make-theme" id="bqBlock">Blockquotes &nbsp;&nbsp;<span class="tag make-success">New!</span></h4>
+                <p>
+                  Sometimes, you just need to take a section from another source and quote it stylistically.
+                  Sparkle fulfills that wish too! Simply add <strong>blockquote</strong> class to your &lt;blockquote&gt; tag.
+                  And, as with many of this framework's features, it also has many different styles.
+                  All you have to do is add <strong>make-$type</strong> to the &lt;blockquote&gt;
+                  class list, where <strong>$type</strong> is either one of the following:
+                  <strong>primary</strong>,
+                  <strong>info</strong>,
+                  <strong>success</strong>,
+                  <strong>warning</strong>,
+                  <strong>danger</strong>,
+                  <strong>light</strong>,
+                  or <strong>dark</strong>.
+                  
+                </p>
+                <div class="grid make-gutters">
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Normal:</h6>
+                    <blockquote class="blockquote">This is a default blockquote.</blockquote>
+                    <blockquote class="blockquote make-primary">This is a primary blockquote.</blockquote>
+                    <blockquote class="blockquote make-info">This is an info blockquote.</blockquote>
+                    <blockquote class="blockquote make-success">This is a success blockquote.</blockquote>
+                    <blockquote class="blockquote make-warning">This is a warning blockquote.</blockquote>
+                    <blockquote class="blockquote make-danger">This is a danger blockquote.</blockquote>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;blockquote class="<strong>blockquote [make-$type]</strong>"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;// Body of Blockquote<br>
+                        &lt;/blockquote&gt;
+                        </code></div>
+                  </div>
                 </div>
               </div>
-              <div class="grid make-gutters">
-                <div class="column make-half">
-                  <h6 class="hero__feature">Outlined:</h6>
-                  <button class="button make-primary make-outline">Primary Outline</button>
-                  <button class="button make-info make-outline">Info Outline</button>
-                  <button class="button make-success make-outline">Success Outline</button>
-                  <button class="button make-warning make-outline">Warning Outline</button>
-                  <button class="button make-danger make-outline">Danger Outline</button>
-                  <button class="button make-light make-outline">Light Outline</button>
-                  <button class="button make-dark make-outline">Dark Outline</button>
+              <div class="hero__section">
+                <h4 class="text make-theme" id="btnBlock">Buttons &nbsp;&nbsp;<span class="tag make-success">New!</span></h4>
+                <p>
+                  One of the most essential elements in a CSS framework: buttons. Sparkle allows you
+                  to style anchor tags, div tags, and buttons by simply putting <strong>button</strong>
+                  in its class. This is also the first step to style a button accordingly (see other styling below).
+                  
+                </p>
+                <div class="grid make-gutters">
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Normal:</h6>
+                    <button class="button">Default</button>
+                    <button class="button make-primary">Primary</button>
+                    <button class="button make-info">Info</button>
+                    <button class="button make-success">Success</button>
+                    <button class="button make-warning">Warning</button>
+                    <button class="button make-danger">Danger</button>
+                    <button class="button make-light">Light</button>
+                    <button class="button make-dark">Dark</button>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;button class="<strong>button [make-$type]</strong>"&gt;Button&lt;/button&gt;
+                        </code></div>
+                  </div>
                 </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;button class="<strong>button make-$type make-outline</strong>"&gt;Button&lt;/button&gt;
-                      </code></div>
+                <div class="grid make-gutters">
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Reversed:</h6>
+                    <button class="button make-primary make-reverse">Primary Reverse</button>
+                    <button class="button make-info make-reverse">Info Reverse</button>
+                    <button class="button make-success make-reverse">Success Reverse</button>
+                    <button class="button make-warning make-reverse">Warning Reverse</button>
+                    <button class="button make-danger make-reverse">Danger Reverse</button>
+                    <button class="button make-light make-reverse">Light Reverse</button>
+                    <button class="button make-dark make-reverse">Dark Reverse</button>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;button class="<strong>button make-$type make-reverse</strong>"&gt;Button&lt;/button&gt;
+                        </code></div>
+                  </div>
+                </div>
+                <div class="grid make-gutters">
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Outlined:</h6>
+                    <button class="button make-primary make-outline">Primary Outline</button>
+                    <button class="button make-info make-outline">Info Outline</button>
+                    <button class="button make-success make-outline">Success Outline</button>
+                    <button class="button make-warning make-outline">Warning Outline</button>
+                    <button class="button make-danger make-outline">Danger Outline</button>
+                    <button class="button make-light make-outline">Light Outline</button>
+                    <button class="button make-dark make-outline">Dark Outline</button>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;button class="<strong>button make-$type make-outline</strong>"&gt;Button&lt;/button&gt;
+                        </code></div>
+                  </div>
+                </div>
+                <div class="grid make-gutters">
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Reverse-Outlined:</h6>
+                    <button class="button make-primary make-reverse make-outline">Primary Reverse Outline</button>
+                    <button class="button make-info make-reverse make-outline">Info Reverse Outline</button>
+                    <button class="button make-success make-reverse make-outline">Success Reverse Outline</button>
+                    <button class="button make-warning make-reverse make-outline">Warning Reverse Outline</button>
+                    <button class="button make-danger make-reverse make-outline">Danger Reverse Outline</button>
+                    <button class="button make-light make-reverse make-outline">Light Reverse Outline</button>
+                    <button class="button make-dark make-reverse make-outline">Dark Reverse Outline</button>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;button class="<strong>button make-$type make-reverse make-outline</strong>"&gt;Button&lt;/button&gt;
+                        </code></div>
+                  </div>
+                </div>
+                <div class="grid make-gutters">
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Ghost:</h6>
+                    <button class="button make-primary make-ghost">Primary Ghost</button>
+                    <button class="button make-info make-ghost">Info Ghost</button>
+                    <button class="button make-success make-ghost">Success Ghost</button>
+                    <button class="button make-warning make-ghost">Warning Ghost</button>
+                    <button class="button make-danger make-ghost">Danger Ghost</button>
+                    <button class="button make-light make-ghost">Light Ghost</button>
+                    <button class="button make-dark make-ghost">Dark Ghost</button>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;button class="<strong>button make-$type make-ghost</strong>"&gt;Button&lt;/button&gt;
+                        </code></div>
+                  </div>
+                </div>
+                <div class="grid make-gutters">
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Link:</h6>
+                    <button class="button make-primary make-link">Primary Link</button>
+                    <button class="button make-info make-link">Info Link</button>
+                    <button class="button make-success make-link">Success Link</button>
+                    <button class="button make-warning make-link">Warning Link</button>
+                    <button class="button make-danger make-link">Danger Link</button>
+                    <button class="button make-light make-link">Light Link</button>
+                    <button class="button make-dark make-link">Dark Link</button>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;button class="<strong>button make-$type make-link</strong>"&gt;Button&lt;/button&gt;
+                        </code></div>
+                  </div>
                 </div>
               </div>
-              <div class="grid make-gutters">
-                <div class="column make-half">
-                  <h6 class="hero__feature">Reverse-Outlined:</h6>
-                  <button class="button make-primary make-reverse make-outline">Primary Reverse Outline</button>
-                  <button class="button make-info make-reverse make-outline">Info Reverse Outline</button>
-                  <button class="button make-success make-reverse make-outline">Success Reverse Outline</button>
-                  <button class="button make-warning make-reverse make-outline">Warning Reverse Outline</button>
-                  <button class="button make-danger make-reverse make-outline">Danger Reverse Outline</button>
-                  <button class="button make-light make-reverse make-outline">Light Reverse Outline</button>
-                  <button class="button make-dark make-reverse make-outline">Dark Reverse Outline</button>
+              <div class="hero__section">
+                <h4 class="text make-theme" id="tagBlock">Tags &nbsp;&nbsp;<span class="tag make-success">New!</span></h4>
+                <p>
+                  You can use tags to allow you to identify or emphasize important information. One of the most
+                  efficient ways to create a tag is to add &lt;span&gt; element with a <strong>tag</strong> class.
+                  Tags come in various type (default, primary, info, etc.) and can be either normal, outlined,
+                  or reversed.
+                  
+                </p>
+                <div class="grid make-gutters">
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Normal:</h6>
+                    <div class="tags"><span class="tag">Default</span><span class="tag make-primary">Primary</span><span class="tag make-info">Info</span><span class="tag make-success">Success</span><span class="tag make-warning">Warning</span><span class="tag make-danger">Danger</span><span class="tag make-light">Light</span><span class="tag make-dark">Dark</span></div>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;span class="<strong>tag make-$type</strong>"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;// Body of Tag<br>
+                        &lt;/span&gt;
+                        </code></div>
+                  </div>
                 </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;button class="<strong>button make-$type make-reverse make-outline</strong>"&gt;Button&lt;/button&gt;
-                      </code></div>
+                <div class="grid make-gutters">   
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Outlined:</h6>
+                    <div class="tags"><span class="tag make-primary make-outline">Primary Outlined</span><span class="tag make-info make-outline">Info Outlined</span><span class="tag make-success make-outline">Success Outlined</span><span class="tag make-warning make-outline">Warning Outlined</span><span class="tag make-danger make-outline">Danger Outlined</span><span class="tag make-light make-outline">Light Outlined</span><span class="tag make-dark make-outline">Dark Outlined</span></div>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;span class="<strong>tag make-$type make-outline</strong>"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;// Body of Tag<br>
+                        &lt;/span&gt;
+                        </code></div>
+                  </div>
                 </div>
-              </div>
-              <div class="grid make-gutters">
-                <div class="column make-half">
-                  <h6 class="hero__feature">Ghost:</h6>
-                  <button class="button make-primary make-ghost">Primary Ghost</button>
-                  <button class="button make-info make-ghost">Info Ghost</button>
-                  <button class="button make-success make-ghost">Success Ghost</button>
-                  <button class="button make-warning make-ghost">Warning Ghost</button>
-                  <button class="button make-danger make-ghost">Danger Ghost</button>
-                  <button class="button make-light make-ghost">Light Ghost</button>
-                  <button class="button make-dark make-ghost">Dark Ghost</button>
-                </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;button class="<strong>button make-$type make-ghost</strong>"&gt;Button&lt;/button&gt;
-                      </code></div>
-                </div>
-              </div>
-              <div class="grid make-gutters">
-                <div class="column make-half">
-                  <h6 class="hero__feature">Link:</h6>
-                  <button class="button make-primary make-link">Primary Link</button>
-                  <button class="button make-info make-link">Info Link</button>
-                  <button class="button make-success make-link">Success Link</button>
-                  <button class="button make-warning make-link">Warning Link</button>
-                  <button class="button make-danger make-link">Danger Link</button>
-                  <button class="button make-light make-link">Light Link</button>
-                  <button class="button make-dark make-link">Dark Link</button>
-                </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;button class="<strong>button make-$type make-link</strong>"&gt;Button&lt;/button&gt;
-                      </code></div>
+                <div class="grid make-gutters">
+                  <div class="column make-half">
+                    <h6 class="hero__feature">Reversed:</h6>
+                    <div class="tags"><span class="tag make-primary make-reverse">Primary Reversed</span><span class="tag make-info make-reverse">Info Reversed</span><span class="tag make-success make-reverse">Success Reversed</span><span class="tag make-warning make-reverse">Warning Reserved</span><span class="tag make-danger make-reverse">Danger Reserved</span><span class="tag make-light make-reverse">Light Reserved</span><span class="tag make-dark make-reverse">Dark Reversed</span></div>
+                  </div>
+                  <div class="column make-half">
+                    <div class="sticker"><code>
+                        &lt;span class="<strong>tag make-$type make-reverse</strong>"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;// Body of Tag<br>
+                        &lt;/span&gt;
+                        </code></div>
+                  </div>
                 </div>
               </div>
-              <h4 class="text make-theme" id="tagBlock">Tags</h4>
-              <p>
-                You can use tags to allow you to identify or emphasize important information. One of the most
-                efficient ways to create a tag is to add &lt;span&gt; element with a <strong>tag</strong> class.
-                Tags come in various type (default, primary, info, etc.) and can be either normal, outlined,
-                or reversed.
-                
-              </p>
+            </div>
+          </div>
+          <div class="hero__footer">
+            <div class="wrapper">
               <div class="grid make-gutters">
-                <div class="column make-half">
-                  <h6 class="hero__feature">Normal:</h6>
-                  <div class="tags"><span class="tag">Default</span><span class="tag make-primary">Primary</span><span class="tag make-info">Info</span><span class="tag make-success">Success</span><span class="tag make-warning">Warning</span><span class="tag make-danger">Danger</span><span class="tag make-light">Light</span><span class="tag make-dark">Dark</span></div>
-                </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;span class="<strong>tag make-$type</strong>"&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;// Body of Tag<br>
-                      &lt;/span&gt;
-                      </code></div>
-                </div>
-              </div>
-              <div class="grid make-gutters">   
-                <div class="column make-half">
-                  <h6 class="hero__feature">Outlined:</h6>
-                  <div class="tags"><span class="tag make-primary make-outline">Primary Outlined</span><span class="tag make-info make-outline">Info Outlined</span><span class="tag make-success make-outline">Success Outlined</span><span class="tag make-warning make-outline">Warning Outlined</span><span class="tag make-danger make-outline">Danger Outlined</span><span class="tag make-light make-outline">Light Outlined</span><span class="tag make-dark make-outline">Dark Outlined</span></div>
-                </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;span class="<strong>tag make-$type make-outline</strong>"&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;// Body of Tag<br>
-                      &lt;/span&gt;
-                      </code></div>
-                </div>
-              </div>
-              <div class="grid make-gutters">
-                <div class="column make-half">
-                  <h6 class="hero__feature">Reversed:</h6>
-                  <div class="tags"><span class="tag make-primary make-reverse">Primary Reversed</span><span class="tag make-info make-reverse">Info Reversed</span><span class="tag make-success make-reverse">Success Reversed</span><span class="tag make-warning make-reverse">Warning Reserved</span><span class="tag make-danger make-reverse">Danger Reserved</span><span class="tag make-light make-reverse">Light Reserved</span><span class="tag make-dark make-reverse">Dark Reversed</span></div>
-                </div>
-                <div class="column make-half">
-                  <div class="sticker"><code>
-                      &lt;span class="<strong>tag make-$type make-reverse</strong>"&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;// Body of Tag<br>
-                      &lt;/span&gt;</code></div>
+                <div class="column">
+                  <p class="text make-small"><i class="fa fa-code text make-thick"></i><span> using&nbsp;</span><span class="text make-thick"><a href="https://jdriviere.github.io/sparkle-css">sparkle.css</a></span><span>&nbsp;by&nbsp;</span><span class="text make-thick"><a href="https://jdriviere.github.io" target="_blank">J. Djimitry Riviere</a></span></p>
                 </div>
               </div>
             </div>
@@ -315,10 +333,5 @@
         </div>
       </main>
     </div>
-    <div class="wrapper">
-      <p class="text--small"><i class="fa fa-code text--thick"></i><span> using&nbsp;</span><span class="text--thick"><a href="https://jdriviere.github.io/sparkle-css">sparkle.css</a></span><span>&nbsp;by&nbsp;</span><span class="text--thick"><a href="https://jdriviere.github.io" target="_blank">J. Djimitry Riviere</a></span></p>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@latest/dist/js/sparkle.min.js"></script>
   </body>
 </html>

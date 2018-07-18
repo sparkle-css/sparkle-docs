@@ -19,6 +19,10 @@
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
 
+.hero__content .hero__section {
+  padding-bottom: 5.0rem;
+}
+
 .hero__feature {
   margin-bottom: 2.0em;
 }
@@ -99,13 +103,16 @@
 }
 
 /* SPECIAL SPARKLE OVERRIDES */
+.nav {
+  z-index: 5;
+}
+
 .nav__brand__ext {
   opacity: 0.75;
 }
 
 .menu {
-  padding-top: 8.0rem;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 3.0rem 2.0rem;
 }
 
 @media screen and (min-width: 640px) {
@@ -115,6 +122,7 @@
     left: 0;
     width: 16.66667%;
     height: 100vh;
+    padding: 8.0rem 1.0rem;
   }
 }
 
@@ -132,14 +140,6 @@
 
 .tags > .tag:first-child {
   margin-left: 0;
-}
-
-ol {
-  margin-left: 1.5rem;
-}
-
-ol > li {
-  padding-left: 3rem;
 }
 
 .icon--size {
