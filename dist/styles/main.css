@@ -52,7 +52,7 @@
   display: block;
   width: 100%;
   max-height: 200px;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   padding: 3.0rem 1.0rem 2.0rem;
   background: #E2E2E2;
   color: #333;
@@ -96,4 +96,42 @@
 [class*=column].col__example p {
   text-align: center;
   border: 1px solid #CCC;
+}
+
+/* SPECIAL SPARKLE OVERRIDES */
+.nav__brand__ext {
+  opacity: 0.75;
+}
+
+.menu {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  background: blue;
+}
+
+.buttons > .button {
+  margin: 0 5px;
+}
+
+.buttons > .button:first-child {
+  margin-left: 0;
+}
+
+.tags > .tag {
+  margin: 5px;
+}
+
+.tags > .tag:first-child {
+  margin-left: 0;
+}
+
+ol {
+  margin-left: 1.5rem;
+}
+
+ol > li {
+  padding-left: 3rem;
+}
+
+.icon--size {
+  font-size: 3.0rem;
 }

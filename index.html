@@ -12,24 +12,24 @@
     <title>Sparkle | Get Started</title>
     <link rel="icon" type="image/png" sizes="16x16" href="dist/img/icon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@latest/dist/css/sparkle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@1.9.9-beta.1/dist/css/sparkle.css">
     <link rel="stylesheet" href="dist/styles/main.css">
   </head>
   <body>
     <header>
-      <nav class="nav nav--fixed">
+      <nav class="nav make-fixed">
         <input type="checkbox" id="nav__trigger">
         <label class="nav__toggle" for="nav__trigger"></label>
         <div class="nav__brand"><a href="https://jdriviere.github.io/sparkle-css"><img src="dist/img/Logo_v2.png" alt="Sparkle_Logo"></a></div>
         <ul class="nav__menu">
           <li class="nav__menu__item"><a href="https://jdriviere.github.io/sparkle-css">Home</a></li>
-          <li class="nav__menu__item nav__menu__item--active"><a href="./">Get Started</a></li>
+          <li class="nav__menu__item make-active"><a href="./">Get Started</a></li>
           <li class="nav__menu__item"><a href="#">Docs</a></li>
           <li class="nav__menu__item"><a href="#">Themes</a></li>
         </ul>
-        <ul class="nav__menu nav__menu--right">
+        <ul class="nav__menu make-right">
           <li class="nav__menu__item"><a href="https://github.com/jdriviere/sparkle-css/archive/v1.9.5.zip"><i class="fa fa-download"></i><span>&nbsp;&nbsp;Download</span></a></li>
-          <li class="nav__menu__item nav__menu__item--special"><a href="https://github.com/jdriviere/sparkle-css" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+          <li class="nav__menu__item make-special"><a href="https://github.com/jdriviere/sparkle-css" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
         </ul>
       </nav>
     </header>
@@ -37,20 +37,20 @@
       <div class="hero">
         <div class="hero__header">
           <div class="wrapper">
-            <h2 class="text--title">Welcome to Sparkle Documentation!</h2>
+            <h2 class="text make-title">Welcome to Sparkle Documentation!</h2>
             <h4>Get everything you need to get started with Sparkle!</h4>
-            <div class="tags"><span class="tag tag--primary"><strong>get started</strong></span><span class="tag tag--dark"><strong>v0.1.0</strong></span></div>
+            <div class="tags"><span class="tag make-primary"><strong>get started</strong></span><span class="tag make-dark"><strong>v0.1.0</strong></span></div>
           </div>
         </div>
         <div class="hero__content">
           <div class="wrapper">
-            <h4 class="text--thick">Getting Started</h4>
+            <h4 class="text make-thick">Getting Started</h4>
             <p>
               There are many ways to import Sparkle into your development folder,
               each way being simple and easy to follow.
             </p><br>
-            <div class="grid grid--gutter">
-              <div class="column column--third hero__feature">
+            <div class="grid make-gutters">
+              <div class="column make-third hero__feature">
                 <p class="hero__feature__title">Install through Bower</p>
                 <p>
                   This is the favorable way, if you wish to dig deep within the
@@ -72,7 +72,7 @@
                 </ol>
                 <div class="sticker"><code>bower install sparkle.css</code></div>
               </div>
-              <div class="column column--third hero__feature">
+              <div class="column make-third hero__feature">
                 <p class="hero__feature__title">Install through CDN</p>
                 <p>
                   You can also install the latest (master) release of the framework.
@@ -83,9 +83,9 @@
                     If you wish to install the latest developmental version of Sparkle,
                     just replace the @[VERSION] with @latest.
                     </span></p>
-                <div class="sticker"><code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/&gt;</code><br><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@[VERSION]/dist/css/sparkle.min.css"&gt;</code><br><br><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;</code><br><code>&lt;script src="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@[VERSION]/dist/js/sparkle.min.js"&gt;&lt;/script&gt;</code><br><br><code><strong>Note: You must have all the proper links in the HTML file for the framework to function properly.</strong></code></div>
+                <div class="sticker"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@[VERSION]/dist/css/sparkle.min.css"&gt;</code></div>
               </div>
-              <div class="column column--third hero__feature">
+              <div class="column make-third hero__feature">
                 <p class="hero__feature__title">Install through Git Repo</p>
                 <p>
                   Go to the following link(s) and download the files you wish to use.
@@ -104,11 +104,14 @@
         </div>
         <div class="hero__footer">
           <div class="wrapper">
-            <p class="text--small"><i class="fa fa-code text--thick"></i><span> using&nbsp;</span><span class="text--thick"><a href="https://jdriviere.github.io/sparkle-css">sparkle.css</a></span><span>&nbsp;by&nbsp;</span><span class="text--thick"><a href="https://jdriviere.github.io" target="_blank">J. Djimitry Riviere</a></span></p>
+            <p class="text make-small"><i class="fa fa-code text--thick"></i><span> using&nbsp;</span><span class="text--thick"><a href="https://jdriviere.github.io/sparkle-css">sparkle.css</a></span><span>&nbsp;by&nbsp;</span><span class="text--thick"><a href="https://jdriviere.github.io" target="_blank">J. Djimitry Riviere</a></span></p>
           </div>
         </div>
       </div>
     </main>
+    <div class="wrapper">
+      <p class="text--small"><i class="fa fa-code text--thick"></i><span> using&nbsp;</span><span class="text--thick"><a href="https://jdriviere.github.io/sparkle-css">sparkle.css</a></span><span>&nbsp;by&nbsp;</span><span class="text--thick"><a href="https://jdriviere.github.io" target="_blank">J. Djimitry Riviere</a></span></p>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/jdriviere/sparkle-css@latest/dist/js/sparkle.min.js"></script>
   </body>
