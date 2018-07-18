@@ -103,10 +103,6 @@
 }
 
 /* SPECIAL SPARKLE OVERRIDES */
-.nav {
-  z-index: 5;
-}
-
 .nav__brand__ext {
   opacity: 0.75;
 }
