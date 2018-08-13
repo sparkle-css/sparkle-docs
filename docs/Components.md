@@ -1,7 +1,7 @@
 # Components
 ## The customized building blocks that build the more complex objects of the framework.
 
-## __Alerts__
+### __Alerts__
 Alerts are used to display information on your screen. Depending on the type of information you want to display (i.e.: danger, warning, success, info, etc.), Sparkle allows you to style it accordingly. Simply add an `alert` class to a `<div>` tag, then add a `make-$type` modifier. 
 
 ```html
@@ -20,7 +20,7 @@ The `make-$type` modifier is optional, and `$type` represents one of the followi
 - `dark`
 
 ---
-## __Blockquotes__
+### __Blockquotes__
 Sometimes, you just need to take a section from another source and quote it stylistically. Sparkle fulfills that wish too! Simply add a `blockquote` class to your `<blockquote>` tag, then a `make-$type`
 modifier if you need it.
 
@@ -40,7 +40,7 @@ The `make-$type` modifier is optional, and `$type` represents one of the followi
 - `dark`
 
 ---
-## __Buttons__
+### __Buttons__
 One of the most essential elements in a CSS framework: buttons. Sparkle allows you to style anchor tags, div tags, and buttons by simply putting `button` in its class list. This is also the first step to style a button accordingly (see other styling below).
 
 ```html
@@ -84,11 +84,11 @@ Lastly, you can use a `<div>` tag with class `buttons` in order to group button 
 The `make-solid` modifier allows you to remove the gaps between each button elements within the group.
 
 ---
-## __Loaders__
+### __Loaders__
 _Information coming soon..._
 
 ---
-## __Tags__
+### __Tags__
 You can use tags to allow you to identify or emphasize important information. One of the most efficient ways to create a tag is to add `<span>` tag with a `tag` class. Tags come in various type (default, primary, info, etc.) and can be either normal, outlined, or reversed.
 
 ```html
