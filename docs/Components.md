@@ -29,15 +29,7 @@ modifier if you need it.
     // Body of element
 </blockquote>
 ```
-
-The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
-- `primary`
-- `info`
-- `success`
-- `warning`
-- `danger`
-- `light`
-- `dark`
+__Note:__ The stylized `blockquote` has been deprecated.
 
 ---
 ### __Buttons__

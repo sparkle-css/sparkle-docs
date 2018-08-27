@@ -33,21 +33,12 @@ must have the `make-inline` class in order to have them displayed on one line.
 _Description coming soon_.
 
 ```html
-<label class="switch [make-$type]">
+<label class="switch">
     <input type="checkbox" class="switch__toggle">
     <i class="switch__handle"></i>
     <i class="switch__label"></i>
 </button>
 ```
-
-The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
-- `primary`
-- `info`
-- `success`
-- `warning`
-- `danger`
-- `light`
-- `dark`
 
 ---
 ### __Inputs__
