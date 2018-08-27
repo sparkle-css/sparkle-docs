@@ -1,4 +1,4 @@
-# Layout
+# Layouts
 ## The overall structural flow of the page.
 
 ### __Cards__
@@ -25,7 +25,7 @@
     </div>
 </div>
 ```
-*Note:* The use of an `<img>` element is optional elements; and if you wish to use an image,
+__Note:__ The use of an `<img>` element is optional elements; and if you wish to use an image,
 in the `card__body`, you don't have to put a `card__image` class to it, unless you want to
 keep it semantically consistent. In the same way, you don't have to include `card__footer__item`
 classes to `<div>` elements, unless you want to separate each footer element separately.
@@ -45,7 +45,10 @@ create a `<div>` element and give it a class of `wrapper`.
 
 ---
 ### __Grid__
-*Description coming soon...*
+The grid (which is also your row) allows you to horizontally arrange your elements on the page, more so efficiently if it is used in conjunction with and inside the `wrapper`. In order to create a proper grid,
+you must create a parent `<div>` tag and give it a class of `grid`, and then create children
+`<div>` tags with a class of `column`. By default, Sparkle grid produces a grid with no gutters:
+in order to create them, you have to add the class `make-gutters` to the `grid`.
 
 ```html
 <div class="grid [make-gutters]">
@@ -58,6 +61,37 @@ create a `<div>` element and give it a class of `wrapper`.
     </div>
 </div>
 ```
+
+The `make-$type` modifier is optional (which would automatically produce a column with 100%, which will
+automatically resize when more columns are added, using the flexbox capabilities), and `$type` represents
+one of the following modifiers:
+- `make-1` to `make-12`
+- `make-twelfth` (equivalent to `make-1`)
+- `make-sixth` (equivalent to `make-2`)
+- `make-fourth` (equivalent to `make-3`)
+- `make-third` (equivalent to `make-4`)
+- `make-half` (equivalent to `make-6`)
+- `make-thirds` (equivalent to `make-8`)
+- `make-fourths` (equivalent to `make-9`)
+- `make-sixths` (equivalent to `make-10`)
+- `make-twelfths` (equivalent to `make-11`)
+- `make-full` (equivalent to `make-12`)
+
+Similarly to `make-$type`, the `offset-$type` modifier represents one of the following modifiers:
+- `offset-1` to `offset-12`
+- `offset-twelfth` (equivalent to `offset-1`)
+- `offset-sixth` (equivalent to `offset-2`)
+- `offset-fourth` (equivalent to `offset-3`)
+- `offset-third` (equivalent to `offset-4`)
+- `offset-half` (equivalent to `offset-6`)
+- `offset-thirds` (equivalent to `offset-8`)
+- `offset-fourths` (equivalent to `offset-9`)
+- `offset-sixths` (equivalent to `offset-10`)
+- `offset-twelfths` (equivalent to `offset-11`)
+- `offset-full` (equivalent to `offset-12`)
+
+__Note:__ It is important to remember that both columns and offsets must fit within a 12-column grid.
+Going over 12 would result is visual problems when laying out your elements.
 
 ---
 ### __Heroes__

@@ -25,7 +25,7 @@ Sometimes, you just need to take a section from another source and quote it styl
 modifier if you need it.
 
 ```html
-<blockquote class="blockquote [make-$type]">
+<blockquote class="blockquote">
     // Body of element
 </blockquote>
 ```
