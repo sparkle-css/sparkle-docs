@@ -4,7 +4,7 @@
   "description": "The official Sparkle.CSS Framework documentation.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pug": "pug --pretty ./dev/components.pug --out ./docs/"
   },
   "repository": {
     "type": "git",
