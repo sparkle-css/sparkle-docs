@@ -32,7 +32,7 @@ modifier if you need it.
 __Note:__ The stylized `blockquote` has been deprecated.
 
 ---
-### __Buttons__
+### [__Buttons__](./assets/SparkleUI_Buttons_v01.png)
 One of the most essential elements in a CSS framework: buttons. Sparkle allows you to style anchor tags, div tags, and buttons by simply putting `button` in its class list. This is also the first step to style a button accordingly (see other styling below).
 
 ```html
@@ -53,7 +53,6 @@ The `make-$type` modifier is optional, and `$type` represents one of the followi
 The following modifiers can only be used if one of the `make-$type` is used:
 - `make-outline`
 - `make-reverse`
-- `make-ghost`
 - `make-link`
 
 You can also alter the size of the button by adding the `make-$size` class to the class list, where `$size` is either one of the following:
