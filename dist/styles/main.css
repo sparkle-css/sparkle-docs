@@ -1,56 +1,26 @@
 /* HERO */
-.hero {
-  width: 100%;
-  height: auto;
-}
-
-.hero__header {
-  padding: 8.0em 0 6.0em;
+.make-bg-image {
   background-image: url("../img/sparkles_bg2_new.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 }
 
-.hero__content {
-  padding: 5.0em 0;
-  background: #FBFBFD;
-  border-top: 0.5px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+/* FEATURES */
+.features {
+  padding: 8.0rem 0;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
 }
 
-.hero__content .hero__section {
-  padding-bottom: 5.0rem;
+.features .feature {
+  margin-bottom: 2.0rem;
+}
+.features .feature:last-child {
+  margin-bottom: 0;
 }
 
-.hero__feature {
-  margin-bottom: 2.0em;
-}
-
-@media screen and (min-width: 640px) {
-  .hero__feature {
-    margin-bottom: 0;
-  }
-}
-
-.hero__feature__title {
-  font-size: 2.0rem;
-  font-weight: 700;
-}
-
-.hero__footer {
-  padding: 2.0em 0;
-}
-
-.hero__footer a {
-  text-decoration: none;
-}
-
-.hero__footer a:hover {
-  text-decoration: underline;
-}
-
-/* Stickers */
+/* STICKERS */
 .sticker {
   position: relative;
   display: block;
@@ -69,7 +39,7 @@
   tab-size: 4;
 }
 
-.sticker:before {
+.sticker::before {
   content: "Code";
   position: absolute;
   top: 0;
@@ -83,62 +53,42 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
-
 .sticker::-webkit-scrollbar {
   width: 1.5rem;
 }
-
 .sticker::-webkit-scrollbar-track {
   background-color: #CCC;
 }
-
 .sticker::-webkit-scrollbar-thumb {
   background-color: #999;
 }
 
-/* COLUMNS */
-[class*=column].col__example p {
-  text-align: center;
-  border: 1px solid #CCC;
-}
-
-/* SPECIAL SPARKLE OVERRIDES */
-.nav__brand__ext {
-  opacity: 0.75;
-}
-
-.menu {
-  padding: 3.0rem 2.0rem;
-}
-
 @media screen and (min-width: 640px) {
-  .menu {
-    position: fixed;
-    top: 6.0rem;
-    left: 0;
-    width: 16.66667%;
-    height: 100%;
-    padding: 3.0rem 1.0rem;
-    overflow: auto;
+  .sticker {
+    margin: 0;
   }
 }
 
-.buttons > .button {
-  margin: 0 5px;
+/* ICONS */
+.make-icon-large {
+  font-size: 3.2rem;
+}
+.make-icon-xlarge {
+  font-size: 4.0rem;
+}
+.make-icon-super {
+  font-size: 4.8rem;
 }
 
-.buttons > .button:first-child {
-  margin-left: 0;
+/* FOOTER */
+footer { background: #F4F4F8; }
+
+/* SPECIAL SPARKLE OVERRIDES */
+.make-text-title + .make-text-subtitle {
+  margin-top: -10px !important;
 }
 
-.tags > .tag {
-  margin: 5px;
-}
-
-.tags > .tag:first-child {
-  margin-left: 0;
-}
-
-.icon--size {
-  font-size: 3.0rem;
+[class*=column].make-example p {
+  text-align: center;
+  border: 1px solid #CCC;
 }
