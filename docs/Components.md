@@ -27,6 +27,9 @@ modifier if you need it.
 ```html
 <blockquote class="blockquote">
     // Body of element
+    <footer class="blockquote__footer">
+        // Body of element
+    </footer>
 </blockquote>
 ```
 __Note:__ The stylized `blockquote` has been deprecated.
@@ -36,7 +39,7 @@ __Note:__ The stylized `blockquote` has been deprecated.
 One of the most essential elements in a CSS framework: buttons. Sparkle allows you to style anchor tags, div tags, and buttons by simply putting `button` in its class list. This is also the first step to style a button accordingly (see other styling below).
 
 ```html
-<button class="button [make-$type]">
+<button class="button [make-$type] [make-$size]">
     // Body of element
 </button>
 ```
@@ -76,7 +79,27 @@ The `make-solid` modifier allows you to remove the gaps between each button elem
 
 ---
 ### __Loaders__
-_Information coming soon..._
+The loaders are great when you want to display something simple while you're waiting for your page, or
+another more specific element, to load. In Sparkle, the loaders come in various types and sizes. In order
+to create a loader, simply create an empty `<div>` tag and style accordingly. The loader can go inside other
+elements, such as buttons.
+
+```html
+<div class="loader [make-$type] [make-$size]"></div>
+```
+
+The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
+- `primary`
+- `info`
+- `success`
+- `warning`
+- `danger`
+- `light`
+- `dark`
+
+You can also alter the size of the loader by adding the `make-$size` class to the class list, where `$size` is either one of the following:
+- `medium`
+- `large`
 
 ---
 ### __Tags__

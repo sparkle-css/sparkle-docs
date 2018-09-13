@@ -39,6 +39,8 @@ _Description coming soon_.
     <i class="switch__label"></i>
 </button>
 ```
+*__Note:__* At the moment, Sparkle doesn't offer the possibility to make the Switches inline. This feature
+will be implemented in the subsequent release.
 
 ---
 ### __Inputs__
@@ -74,7 +76,7 @@ and style its elements:
             </div>
             <div class="column make-thirds">
                 <select id="text3" name="text3" class="select [make-$type]">
-                    <option slected disabled>Select an option below...</option>
+                    <option selected disabled>Select an option below...</option>
                     <option>Option 1</option>
                     <option>Option 2</option>
                     <option>Option 3</option>
