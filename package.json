@@ -4,7 +4,8 @@
   "description": "The official Sparkle.CSS Framework documentation.",
   "main": "index.js",
   "scripts": {
-    "pug": "pug --pretty ./dev/components.pug --out ./docs/"
+    "pug:index": "pug --pretty ./dev/index.pug --out ./",
+    "pug:dev": "pug --pretty ./dev/components.pug --out ./docs/"
   },
   "repository": {
     "type": "git",
