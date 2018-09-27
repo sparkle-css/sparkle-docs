@@ -46,17 +46,17 @@ create a `<div>` element and give it a class of `wrapper`.
 ---
 ### __Grid__
 The grid (which is also your row) allows you to horizontally arrange your elements on the page, more so efficiently if it is used in conjunction with and inside the `wrapper`. In order to create a proper grid,
-you must create a parent `<div>` tag and give it a class of `grid`, and then create children
-`<div>` tags with a class of `column`. By default, Sparkle grid produces a grid with no gutters:
-in order to create them, you have to add the class `make-gutters` to the `grid`.
+you must create a parent `<div>` tag and give it a class of `columns`, and then create children
+`<div>` tags with a class of `column`. By default, Sparkle grid produces a grid with gutters:
+in order to remove them, you have to add the class `make-no-gaps` to the `columns`.
 
 ```html
-<div class="grid [make-gutters]">
-    <div class="column [make-$type] [offset-$type]">
+<div class="columns [make-no-gaps] [make-multiline]">
+    <div class="column [make-$type] [make-offset-$type]">
         // Body of element
     </div>
     ...
-    <div class="column [make-$type] [offset-$type]">
+    <div class="column [make-$type] [make-offset-$type]">
         // Body of element
     </div>
 </div>
@@ -77,18 +77,28 @@ one of the following modifiers:
 - `make-twelfths` (equivalent to `make-11`)
 - `make-full` (equivalent to `make-12`)
 
-Similarly to `make-$type`, the `offset-$type` modifier represents one of the following modifiers:
-- `offset-1` to `offset-12`
-- `offset-twelfth` (equivalent to `offset-1`)
-- `offset-sixth` (equivalent to `offset-2`)
-- `offset-fourth` (equivalent to `offset-3`)
-- `offset-third` (equivalent to `offset-4`)
-- `offset-half` (equivalent to `offset-6`)
-- `offset-thirds` (equivalent to `offset-8`)
-- `offset-fourths` (equivalent to `offset-9`)
-- `offset-sixths` (equivalent to `offset-10`)
-- `offset-twelfths` (equivalent to `offset-11`)
-- `offset-full` (equivalent to `offset-12`)
+Similarly to `make-$type`, the `make-offset-$type` modifier represents one of the following modifiers:
+- `make-offset-1` to `make-offset-12`
+- `make-offset-twelfth` (equivalent to `make-offset-1`)
+- `make-offset-sixth` (equivalent to `make-offset-2`)
+- `make-offset-fourth` (equivalent to `make-offset-3`)
+- `make-offset-third` (equivalent to `make-offset-4`)
+- `make-offset-half` (equivalent to `make-offset-6`)
+- `make-offset-thirds` (equivalent to `make-offset-8`)
+- `make-offset-fourths` (equivalent to `make-offset-9`)
+- `make-offset-sixths` (equivalent to `make-offset-10`)
+- `make-offset-twelfths` (equivalent to `make-offset-11`)
+- `make-offset-full` (equivalent to `make-offset-12`)
+
+You can also make the columns resize according to a specific screen breakpoint by adding one of the following
+modifiers into the `make-$type`:
+- `xsmall` (i.e.: `make-3-xsmall` would take a fourth of the screen no matter what the screen size)
+- `small` (i.e.: `make-4-small` would take a third of the screen when the screen width is 480px or more)
+- `medium` (i.e.: `make-8-medium` would take two-thirds of the screen when the screen width is 640px or more)
+- `large` (i.e.: `make-9-large` would take three-fourths of the screen when the screen width is 960px or more)
+- `xlarge` (i.e.: `make-6-xlarge` would take half of the screen when the screen width is 1200px or more)
+
+__Note:__ These breakpoint modifiers are also applicable to the offsets (ex.: `make-offset-4-small`).
 
 __Note:__ It is important to remember that both columns and offsets must fit within a 12-column grid.
 Going over 12 would result is visual problems when laying out your elements.
@@ -135,16 +145,7 @@ Going over 12 would result is visual problems when laying out your elements.
 *Description coming soon...*
 
 ```html
-<div class="media make-$size [make-$type]">
-    <div class="media__profile">
-        <img src="#" alt="#">
-    </div>
-    <div class="media__body">
-        <div class="media__title">John Doe</div>
-        <div class="media__subtitle">Web Developer | UX Designer</div>
-        // Body of element
-    </div>
-</div>
+<div class="menu"></div>
 ```
 
 ---
@@ -152,16 +153,23 @@ Going over 12 would result is visual problems when laying out your elements.
 *Description coming soon...*
 
 ```html
-<div class="media make-$size [make-$type]">
-    <div class="media__profile">
-        <img src="#" alt="#">
-    </div>
-    <div class="media__body">
-        <div class="media__title">John Doe</div>
-        <div class="media__subtitle">Web Developer | UX Designer</div>
-        // Body of element
-    </div>
-</div>
+<nav class="nav [make-fixed]">
+    <input type="checkbox" id="id" class="nav__toggle">
+    <label for="id"></label>
+    <div class="nav__brand">Brand</div>
+
+    <ul class="nav__menu">
+        <li class="nav__menu__item [make-active]"><a href="#">Link 1</a></li>
+        <li class="nav__menu__item"><a href="#">Link 2</a></li>
+        <li class="nav__menu__item"><a href="#">Link 3</a></li>
+    </ul>
+
+    <ul class="nav__menu make-right">
+        <li class="nav__menu__item"><a href="#">Link 4</a></li>
+        <li class="nav__menu__item"><a href="#">Link 5</a></li>
+        <li class="nav__menu__item"><a href="#">Link 6</a></li>
+    </ul>
+</nav>
 ```
 
 ---

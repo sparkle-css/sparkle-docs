@@ -21,8 +21,7 @@ The `make-$type` modifier is optional, and `$type` represents one of the followi
 
 ---
 ### __Blockquotes__
-Sometimes, you just need to take a section from another source and quote it stylistically. Sparkle fulfills that wish too! Simply add a `blockquote` class to your `<blockquote>` tag, then a `make-$type`
-modifier if you need it.
+Sometimes, you just need to take a section from another source and quote it stylistically. Sparkle fulfills that wish too! Simply add a `blockquote` class to your `<blockquote>` tag.
 
 ```html
 <blockquote class="blockquote">
