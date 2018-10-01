@@ -35,12 +35,15 @@ __Note:__ The stylized `blockquote` has been deprecated.
 
 ---
 ### [__Buttons__](./assets/SparkleUI_Buttons_v01.png)
-One of the most essential elements in a CSS framework: buttons. Sparkle allows you to style anchor tags, div tags, and buttons by simply putting `button` in its class list. This is also the first step to style a button accordingly (see other styling below).
+One of the most essential elements in a CSS framework: buttons. Sparkle allows you to style anchor tags, div tags, input:button tags, or buttons by simply putting `button` in its class list. This is also the first step to style a button accordingly (see other styling below).
 
 ```html
-<button class="button [make-$type] [make-$size]">
-    // Body of element
-</button>
+<a href="#" class="button [make-$type] [make-$size]">Button</a>
+<button class="button [make-$type] [make-$size]">Button</button>
+<div class="button [make-$type] [make-$size]">Button</div>
+<input type="button" class="button [make-$type] [make-$size]" value="Button">
+<input type="submit" class="button [make-$type] [make-$size]" value="Button">
+<input type="clear" class="button [make-$type] [make-$size]" value="Button">
 ```
 
 The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
@@ -105,9 +108,7 @@ You can also alter the size of the loader by adding the `make-$size` class to th
 You can use tags to allow you to identify or emphasize important information. One of the most efficient ways to create a tag is to add `<span>` tag with a `tag` class. Tags come in various type (default, primary, info, etc.) and can be either normal, outlined, or reversed.
 
 ```html
-<span class="tag [make-$type]">
-    // Body of element
-</span>
+<span class="tag [make-$type]">Tag</span>
 ```
 
 The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:

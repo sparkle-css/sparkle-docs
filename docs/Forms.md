@@ -74,11 +74,11 @@ The `make-$type` modifier is optional, and `$type` represents one of the followi
 - `danger`
 
 __Note:__ The `input` class is also valid to style the following:
-- `text="password"`
-- `text="email"`
-- `text="tel"`
-- `text="number"`
-- Etc...
+- `type="password"`
+- `type="email"`
+- `type="tel"`
+- `type="number"`
+- Etc..., except `type="button"`, `type="submit"`, or `type="clear"` which pertain to buttons.
 
 ---
 ### __Input Groups__
