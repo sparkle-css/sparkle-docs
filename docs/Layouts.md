@@ -109,9 +109,9 @@ Going over 12 would result is visual problems when laying out your elements.
 
 ```html
 <div class="hero make-$size [make-$type]">
-    <div class="hero__header">
+    <header class="hero__header">
         // Body of element
-    </div>
+    </header>
     <div class="hero__body">
         <div class="wrapper">
             // Body of element
@@ -133,8 +133,8 @@ Going over 12 would result is visual problems when laying out your elements.
         <img src="#" alt="#">
     </div>
     <div class="media__body">
-        <div class="media__title">John Doe</div>
-        <div class="media__subtitle">Web Developer | UX Designer</div>
+        <p class="media__title">John Doe</p>
+        <p class="media__subtitle">Web Developer | UX Designer</p>
         // Body of element
     </div>
 </div>
@@ -145,12 +145,31 @@ Going over 12 would result is visual problems when laying out your elements.
 *Description coming soon...*
 
 ```html
-<div class="menu"></div>
+<div class="menu" style="max-width: 200px;">
+    <p class="menu__group">Group 1</p>
+    <a href="#" class="menu__item">Menu Item 1</a>
+    <a href="#" class="menu__item">Menu Item 2</a>
+    <a href="#" class="menu__item">Menu Item 3</a>
+    <p class="menu__group">Group 2</p>
+    <a href="#" class="menu__item">Menu Item 4</a>
+    <a href="#" class="menu__item">Menu Item 5</a>
+    <div class="submenu">
+        <a href="#" class="menu__item">Submenu Item 1</a>
+        <a href="#" class="menu__item">Submenu Item 2</a>
+        <div class="submenu">
+            <a href="" class="menu__item">Sub-Submenu</a>
+        </div>
+    </div>
+    <a href="#" class="menu__item">Menu Item 6</a>
+    <p class="menu__group">Group 3</p>
+    <a href="#" class="menu__item">Menu Item 7</a>
+    <a href="#" class="menu__item">Menu Item 8</a>
+</div>
 ```
 
 ---
 ### __Navigation__
-*Description coming soon...*
+_Description coming soon..._
 
 ```html
 <nav class="nav [make-fixed]">
@@ -174,7 +193,7 @@ Going over 12 would result is visual problems when laying out your elements.
 
 ---
 ### __Tables__
-*Description coming soon...*
+_Description coming soon..._
 
 ```html
 <table class="table [make-$type] [make-hoverable]">

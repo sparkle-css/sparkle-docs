@@ -47,21 +47,22 @@ will be implemented in the subsequent release.
 This is probably the most popular and important aspect of any forms. Sparkle allows you to customize the inputs, labels, textareas, and selections by applying the `input`, `label`, `textarea`, and `select` classes to each respective elements. The following shows a good example on how to create a form and style its elements:
 
 ```html
-<!-- LABEL -->
+<!-- Label -->
 <label for="#" class="label">Label</label>
 
-<!-- INPUTS -->
+<!-- Inputs -->
 <input type="text" class="input" [placeholder="Optional text here..."]>
 
-<!-- TEXTAREA -->
+<!-- Textarea -->
 <textarea class="textarea" [placeholder="Optional text here..."]></textarea>
 
-<!-- SELECT -->
+<!-- Select -->
 <select class="select">
     <option name="selection" selected disabled>Make a selection</option>
     <option name="selection" value="A">Option A</option>
     <option name="selection" value="B">Option B</option>
     <option name="selection" value="C">Option C</option>
+    ...
 </select>
 ```
 
@@ -78,3 +79,44 @@ __Note:__ The `input` class is also valid to style the following:
 - `text="tel"`
 - `text="number"`
 - Etc...
+
+---
+### __Input Groups__
+Input groups allow the user to create a margin to vertically separate a set of input elements from other surrounding
+elements on the page. Simply add the class `inputs` to a `<div>` element, then add the desired children form elements.
+The example below will create a set of `label` and `input` field, then create a margin at the top and bottom of the
+parent `<div>` element.
+
+```html
+<div class="inputs">
+    <label for="#" class="label">Label</label>
+    <input type="text" class="input" id="#" [placeholder="Optional text here..."]>
+</div>
+```
+
+---
+### __Form Groups__
+Form groups allow the user to prepend or append a button to an input field, as seen in some modern forms or search bars,
+in many popular websites. In order to create a form group, simply create a `<div>` element with a class `form-group`, then
+add a bottom before or after (or both) a `button` element with a class of `button`, as seen in the example below:
+
+```html
+<!-- Prepend -->
+<div class="form-group">
+    <button class="button">Button</button>
+    <input type="text" class="input" [placeholder="Optional text here..."]>
+</div>
+
+<!-- Append -->
+<div class="form-group">
+    <input type="text" class="input" [placeholder="Optional text here..."]>
+    <button class="button">Button</button>
+</div>
+
+<!-- Both -->
+<div class="form-group">
+    <button class="button">Button 1</button>
+    <input type="text" class="input" [placeholder="Optional text here..."]>
+    <button class="button">Button 2</button>
+</div>
+```
