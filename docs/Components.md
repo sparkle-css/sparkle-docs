@@ -43,7 +43,7 @@ One of the most essential elements in a CSS framework: buttons. Sparkle allows y
 <div class="button [make-$type] [make-$size]">Button</div>
 <input type="button" class="button [make-$type] [make-$size]" value="Button">
 <input type="submit" class="button [make-$type] [make-$size]" value="Button">
-<input type="clear" class="button [make-$type] [make-$size]" value="Button">
+<input type="reset" class="button [make-$type] [make-$size]" value="Button">
 ```
 
 The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
