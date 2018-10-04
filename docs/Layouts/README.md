@@ -101,11 +101,13 @@ modifiers into the `make-$type`:
 __Note:__ These breakpoint modifiers are also applicable to the offsets (ex.: `make-offset-4-small`).
 
 __Note:__ It is important to remember that both columns and offsets must fit within a 12-column grid.
-Going over 12 would result is visual problems when laying out your elements.
+Going over 12 would result is visual problems when laying out your elements, unless the class `make-multiline`
+is added to the `columns` element, in which case it will create a new row automatically.
 
 ---
 ### __Heroes__
-*Description coming soon...*
+The `hero` class allows the user to boldly display visual elements on the page, like a banner, for example.
+In order to create it, simply add `hero` to a `<div>` element
 
 ```html
 <div class="hero make-$size [make-$type]">
@@ -122,6 +124,29 @@ Going over 12 would result is visual problems when laying out your elements.
     </div>
 </div>
 ```
+
+The `hero` class contains two extra subclasses: `make-$size` and `make-$type`. The `make-$size` subclass
+is mandatory, in order to give the element a specific spacing to the `hero` element. The sizes are as
+followed:
+- `make-small` (creates a relatively small banner-like spacing)
+- `make-medium` (creates a 3x bigger banner-like spacing than `make-small`)
+- `make-large` (creates a 3x bigger banner-like spacing than `make-medium`)
+- `make-half-height` (creates a banner-like spacing that takes half of the viewport height)
+- `make-full-height` (creates a banner-like spacing that takes the entire viewport height)
+
+As for the `make-$type` subclass, Sparkle offers the user some pre-made customization. The types,
+like most elements that have them, comprise of:
+- `make-primary`
+- `make-info`
+- `make-success`
+- `make-warning`
+- `make-danger`
+- `make-light`
+- `make-dark`
+
+__Note:__ The `hero__header` and `hero__footer` are optional elements, but the `hero__body` is mandatory, more so
+if you intend to use the `make-half-height` or `make-full-height` modifiers. The `wrapper` class is
+heavily suggested if using the aforementioned modifiers and must be placed __inside__ the `hero__body`.
 
 ---
 ### __Media__

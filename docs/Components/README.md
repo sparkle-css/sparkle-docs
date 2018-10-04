@@ -34,7 +34,7 @@ Sometimes, you just need to take a section from another source and quote it styl
 __Note:__ The stylized `blockquote` has been deprecated.
 
 ---
-### [__Buttons__](./assets/SparkleUI_Buttons_v01.png)
+### [__Buttons__](../assets/SparkleUI_Buttons_v01.png)
 One of the most essential elements in a CSS framework: buttons. Sparkle allows you to style anchor tags, div tags, input:button tags, or buttons by simply putting `button` in its class list. This is also the first step to style a button accordingly (see other styling below).
 
 ```html
@@ -100,8 +100,8 @@ The `make-$type` modifier is optional, and `$type` represents one of the followi
 - `dark`
 
 You can also alter the size of the loader by adding the `make-$size` class to the class list, where `$size` is either one of the following:
-- `medium`
 - `large`
+- `xlarge`
 
 ---
 ### __Tags__

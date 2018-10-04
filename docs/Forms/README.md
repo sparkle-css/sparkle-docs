@@ -43,7 +43,7 @@ _Description coming soon_.
 will be implemented in the subsequent release.
 
 ---
-### [__Inputs__](./assets/SparkleUI_Inputs_v01.png)
+### [__Inputs__](../assets/SparkleUI_Inputs_v01.png)
 This is probably the most popular and important aspect of any forms. Sparkle allows you to customize the inputs, labels, textareas, and selections by applying the `input`, `label`, `textarea`, and `select` classes to each respective elements. The following shows a good example on how to create a form and style its elements:
 
 ```html
