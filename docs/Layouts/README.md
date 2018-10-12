@@ -2,7 +2,10 @@
 ## The overall structural flow of the page.
 
 ### __Cards__
-*Description coming soon...*
+Cards allow the user to create a box around several elements. Cards contain 3 different "panels":
+the header, the body, and the footer. You can create a card by adding the class `card` to a `<div>`
+element, then separate each panel by adding `card__header`, `card__body`, or `card__footer` to its
+respective usage. The example below shows how to properly create a card:
 
 ```html
 <div class="card">
@@ -26,9 +29,9 @@
 </div>
 ```
 __Note:__ The use of an `<img>` element is optional elements; and if you wish to use an image,
-in the `card__body`, you don't have to put a `card__image` class to it, unless you want to
-keep it semantically consistent. In the same way, you don't have to include `card__footer__item`
-classes to `<div>` elements, unless you want to separate each footer element separately.
+in the `card__body`, you don't have to add a `card__image` class to it, unless you want to
+keep it semantically consistent. In the same way, you don't have to add `card__footer__item`
+classes to `<div>` elements, unless you want to separate each footer element in its own "box".
 
 ---
 ### __Containers__

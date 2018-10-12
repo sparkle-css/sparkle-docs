@@ -51,10 +51,10 @@ This is probably the most popular and important aspect of any forms. Sparkle all
 <label for="#" class="label">Label</label>
 
 <!-- Inputs -->
-<input type="text" class="input" [placeholder="Optional text here..."]>
+<input type="text" class="input">
 
 <!-- Textarea -->
-<textarea class="textarea" [placeholder="Optional text here..."]></textarea>
+<textarea class="textarea"></textarea>
 
 <!-- Select -->
 <select class="select">
@@ -73,7 +73,7 @@ The `make-$type` modifier is optional, and `$type` represents one of the followi
 - `warning`
 - `danger`
 
-__Note:__ The `input` class is also valid to style the following:
+__Note:__ The `input` class is also used to style the following:
 - `type="password"`
 - `type="email"`
 - `type="tel"`
@@ -90,33 +90,31 @@ parent `<div>` element.
 ```html
 <div class="inputs">
     <label for="#" class="label">Label</label>
-    <input type="text" class="input" id="#" [placeholder="Optional text here..."]>
+    <input type="text" class="input" id="#">
 </div>
 ```
 
 ---
 ### __Form Groups__
-Form groups allow the user to prepend or append a button to an input field, as seen in some modern forms or search bars,
-in many popular websites. In order to create a form group, simply create a `<div>` element with a class `form-group`, then
-add a bottom before or after (or both) a `button` element with a class of `button`, as seen in the example below:
+Form groups allow the user to prepend or append a button to an input field, as seen in some modern forms or search bars, in many popular websites. In order to create a form group, simply create a `<div>` element with a class `form-group`, then add a bottom before or after (or both) a `button` element with a class of `button`, as seen in the example below:
 
 ```html
 <!-- Prepend -->
 <div class="form-group">
     <button class="button">Button</button>
-    <input type="text" class="input" [placeholder="Optional text here..."]>
+    <input type="text" class="input">
 </div>
 
 <!-- Append -->
 <div class="form-group">
-    <input type="text" class="input" [placeholder="Optional text here..."]>
+    <input type="text" class="input">
     <button class="button">Button</button>
 </div>
 
 <!-- Both -->
 <div class="form-group">
     <button class="button">Button 1</button>
-    <input type="text" class="input" [placeholder="Optional text here..."]>
+    <input type="text" class="input">
     <button class="button">Button 2</button>
 </div>
 ```
