@@ -37,7 +37,7 @@ _Description coming soon_.
     <input type="checkbox" class="switch__toggle">
     <i class="switch__handle"></i>
     <i class="switch__label"></i>
-</button>
+</label>
 ```
 *__Note:__* At the moment, Sparkle doesn't offer the possibility to make the Switches inline. This feature
 will be implemented in the subsequent release.
@@ -96,7 +96,7 @@ parent `<div>` element.
 
 ---
 ### __Form Groups__
-Form groups allow the user to prepend or append a button to an input field, as seen in some modern forms or search bars, in many popular websites. In order to create a form group, simply create a `<div>` element with a class `form-group`, then add a bottom before or after (or both) a `button` element with a class of `button`, as seen in the example below:
+Form groups allow the user to prepend or append a button to an input field, as seen in some modern forms or search bars, in many popular websites. In order to create a form group, simply create a `<div>` element with a class `form-group`, then add, before or after (or both), a `<button>` element with a class of `button`, as seen in the examples below:
 
 ```html
 <!-- Prepend -->
