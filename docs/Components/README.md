@@ -1,7 +1,7 @@
 # Components
 ## The customized building blocks that build the more complex objects of the framework.
 
-### __Alerts__
+### [__Alerts__](../assets/SparkleUI_Alerts_v01.png)
 Alerts are used to display information on your screen. Depending on the type of information you want to display (i.e.: danger, warning, success, info, etc.), Sparkle allows you to style it accordingly. Simply add an `alert` class to a `<div>` tag, then add a `make-$type` modifier. 
 
 ```html
