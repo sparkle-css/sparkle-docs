@@ -51,13 +51,13 @@ This is probably the most popular and important aspect of any forms. Sparkle all
 <label for="#" class="label">Label</label>
 
 <!-- Inputs -->
-<input type="text" class="input">
+<input type="text" class="input [make-$type]">
 
 <!-- Textarea -->
-<textarea class="textarea"></textarea>
+<textarea class="textarea [make-$type]"></textarea>
 
 <!-- Select -->
-<select class="select">
+<select class="select [make-$type]">
     <option name="selection" selected disabled>Make a selection</option>
     <option name="selection" value="A">Option A</option>
     <option name="selection" value="B">Option B</option>
@@ -66,12 +66,16 @@ This is probably the most popular and important aspect of any forms. Sparkle all
 </select>
 ```
 
-The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
-- `primary`
-- `info`
-- `success`
-- `warning`
-- `danger`
+The `make-$type` modifier is optional, and the table below represents the list of the available modifiers:
+
+| __Modifiers__  | __Effect__                                                                    |
+| ---------------| ------------------------------------------------------------------------------|
+| `make-primary` | Creates an input field with an outline with the color set by `$color-primary`.|
+| `make-info`    | Creates an input field with an outline with the color set by `$color-info`.   |
+| `make-success` | Creates an input field with an outline with the color set by `$color-success`.|
+| `make-warning` | Creates an input field with an outline with the color set by `$color-warning`.|
+| `make-warning` | Creates an input field with an outline with the color set by `$color-warning`.|
+| `make-danger`  | Creates an input field with an outline with the color set by `$color-danger`. |
 
 __Note:__ The `input` class is also used to style the following:
 - `type="password"`
