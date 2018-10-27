@@ -11,13 +11,16 @@ Alerts are used to display information on your screen. Depending on the type of 
 ```
 
 The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
-- `primary`
-- `info`
-- `success`
-- `warning`
-- `danger`
-- `light`
-- `dark`
+
+| __Modifiers__  | __Effect__                                                                                    |
+| -------------- | --------------------------------------------------------------------------------------------- |
+| `make-primary` | The BG color of the `alert` is set to `$color-primary`, and the font color to `$color-dark`.  |
+| `make-info`    | The BG color of the `alert` is set to `$color-info`, and the font color to `$color-light`.    |
+| `make-success` | The BG color of the `alert` is set to `$color-success`, and the font color to `$color-light`. |
+| `make-warning` | The BG color of the `alert` is set to `$color-warning`, and the font color to `$color-dark`.  |
+| `make-danger`  | The BG color of the `alert` is set to `$color-danger`, and the font color to `$color-light`.  |
+| `make-light`   | The BG color of the `alert` is set to `$color-light`, and the font color to `$color-dark`.    |
+| `make-dark`    | The BG color of the `alert` is set to `$color-dark`, and the font color to `$color-light`.    |
 
 ---
 ### __Blockquotes__
@@ -47,25 +50,34 @@ One of the most essential elements in a CSS framework: buttons. Sparkle allows y
 ```
 
 The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
-- `primary`
-- `info`
-- `success`
-- `warning`
-- `danger`
-- `light`
-- `dark`
+
+| __Modifiers__  | __Effect__                                                                                     |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| `make-primary` | The BG color of the `button` is set to `$color-primary`, and the font color to `$color-dark`.  |
+| `make-info`    | The BG color of the `button` is set to `$color-info`, and the font color to `$color-light`.    |
+| `make-success` | The BG color of the `button` is set to `$color-success`, and the font color to `$color-light`. |
+| `make-warning` | The BG color of the `button` is set to `$color-warning`, and the font color to `$color-dark`.  |
+| `make-danger`  | The BG color of the `button` is set to `$color-danger`, and the font color to `$color-light`.  |
+| `make-light`   | The BG color of the `button` is set to `$color-light`, and the font color to `$color-dark`.    |
+| `make-dark`    | The BG color of the `button` is set to `$color-dark`, and the font color to `$color-light`.    |
 
 The following modifiers can only be used if one of the `make-$type` is used:
-- `make-outline`
-- `make-reverse`
-- `make-link`
+
+| __Modifiers__  | __Effect__                                                                                |
+| -------------- | ----------------------------------------------------------------------------------------- |
+| `make-outline` | Allows the button to become outlined (combinable with `make-reverse`).                    |
+| `make-reverse` | Reverses the color of the font with the color of the BG (combinable with `make-outline`). |
+| `make-link`    | Allows the button to look like a regular link (no background or outline).                 |
 
 You can also alter the size of the button by adding the `make-$size` class to the class list, where `$size` is either one of the following:
-- `xsmall`
-- `small`
-- `large`
-- `xlarge`
-- `block`
+
+| __Modifiers__ | __Effect__                                                 |
+| ------------- | ---------------------------------------------------------- |
+| `make-xsmall` | Creates a very small button.                               |
+| `make-small`  | Creates a small button.                                    |
+| `make-large`  | Creates a large button.                                    |
+| `make-xlarge` | Creates a very large button.                               |
+| `make-block`  | Creates a button that spans through 100% of its container. |
 
 Lastly, you can use a `<div>` tag with class `buttons` in order to group button elements together, as followed:
 ```html
@@ -77,7 +89,11 @@ Lastly, you can use a `<div>` tag with class `buttons` in order to group button 
 </div>
 ```
 
-The `make-solid` modifier allows you to remove the gaps between each button elements within the group.
+There is only one modifier for a button group:
+
+| __Modifiers__ | __Effect__                                                                      |
+| ------------- | ------------------------------------------------------------------------------- |
+| `make-solid`  | It allows you to remove the gaps between each button elements within the group. |
 
 ---
 ### __Loaders__
@@ -91,17 +107,23 @@ elements, such as buttons.
 ```
 
 The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
-- `primary`
-- `info`
-- `success`
-- `warning`
-- `danger`
-- `light`
-- `dark`
+
+| __Modifiers__  | __Effect__                                                       |
+| -------------- | ---------------------------------------------------------------- |
+| `make-primary` | The BG color of the `loader` spinner is set to `$color-primary`. |
+| `make-info`    | The BG color of the `loader` spinner is set to `$color-info`.    |
+| `make-success` | The BG color of the `loader` spinner is set to `$color-success`. |
+| `make-warning` | The BG color of the `loader` spinner is set to `$color-warning`. |
+| `make-danger`  | The BG color of the `loader` spinner is set to `$color-danger`.  |
+| `make-light`   | The BG color of the `loader` spinner is set to `$color-light`.   |
+| `make-dark`    | The BG color of the `loader` spinner is set to `$color-dark`.    |
 
 You can also alter the size of the loader by adding the `make-$size` class to the class list, where `$size` is either one of the following:
-- `large`
-- `xlarge`
+
+| __Modifiers__ | __Effect__                                 |
+| ------------- | ------------------------------------------ |
+| `make-large`  | It creates a large `loader` spinner.       |
+| `make-xlarge` | It creates an even large `loader` spinner. |
 
 ---
 ### __Tags__
@@ -112,17 +134,23 @@ You can use tags to allow you to identify or emphasize important information. On
 ```
 
 The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
-- `primary`
-- `info`
-- `success`
-- `warning`
-- `danger`
-- `light`
-- `dark`
+
+| __Modifiers__  | __Effect__                                                                                  |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| `make-primary` | The BG color of the `tag` is set to `$color-primary`, and the font color to `$color-dark`.  |
+| `make-info`    | The BG color of the `tag` is set to `$color-info`, and the font color to `$color-light`.    |
+| `make-success` | The BG color of the `tag` is set to `$color-success`, and the font color to `$color-light`. |
+| `make-warning` | The BG color of the `tag` is set to `$color-warning`, and the font color to `$color-dark`.  |
+| `make-danger`  | The BG color of the `tag` is set to `$color-danger`, and the font color to `$color-light`.  |
+| `make-light`   | The BG color of the `tag` is set to `$color-light`, and the font color to `$color-dark`.    |
+| `make-dark`    | The BG color of the `tag` is set to `$color-dark`, and the font color to `$color-light`.    |
 
 The following modifiers can only be used if one of the `make-$type` is used:
-- `make-outline`
-- `make-reverse`
+
+| __Modifiers__  | __Effect__                                                                                      |
+| -------------- | ----------------------------------------------------------------------------------------------- |
+| `make-outline` | Allows the `tag` to become outlined (__not__ combinable with `make-reverse`).                   |
+| `make-reverse` | Reverses the color of the font with the color of the BG (*not* combinable with `make-outline`). |
 
 Like buttons, you can couple multiple tags into one group by creating a `<div>` tag with a class `tags`:
 ```html
@@ -133,4 +161,9 @@ Like buttons, you can couple multiple tags into one group by creating a `<div>` 
     ...
 </div>
 ```
-The `make-solid` modifier allows you to remove the gaps between each button elements within the group.
+
+There is only one modifier for a tag group:
+
+| __Modifiers__ | __Effect__                                                                   |
+| ------------- | ---------------------------------------------------------------------------- |
+| `make-solid`  | It allows you to remove the gaps between each tag elements within the group. |
