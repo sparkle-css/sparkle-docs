@@ -99,24 +99,24 @@ parent `<div>` element.
 ```
 
 ---
-### __Form Groups__
-Form groups allow the user to prepend or append a button to an input field, as seen in some modern forms or search bars, in many popular websites. In order to create a form group, simply create a `<div>` element with a class `form-group`, then add, before or after (or both), a `<button>` element with a class of `button`, as seen in the examples below:
+### __Input Addons__
+Form groups allow the user to prepend or append a button to an input field, as seen in some modern forms or search bars, in many popular websites. In order to create an input addon, simply create a `<div>` element with a class `input__addon`, then add, before or after (or both), a `<button>` element with a class of `button`, as seen in the examples below:
 
 ```html
 <!-- Prepend -->
-<div class="form-group">
+<div class="input__addon">
     <button class="button">Button</button>
     <input type="text" class="input">
 </div>
 
 <!-- Append -->
-<div class="form-group">
+<div class="input__addon">
     <input type="text" class="input">
     <button class="button">Button</button>
 </div>
 
 <!-- Both -->
-<div class="form-group">
+<div class="input__addon">
     <button class="button">Button 1</button>
     <input type="text" class="input">
     <button class="button">Button 2</button>
