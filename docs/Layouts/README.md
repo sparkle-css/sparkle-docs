@@ -1,6 +1,25 @@
 # Layouts
 ## The overall structural flow of the page.
 
+### __Breadcrumbs__
+Breadcrumbs, like navigation bars, allow the user to easily determine where he is at within a website's site map
+and go back to a previous page within a chain link. In order to create a breadcrumb, you can add the class `breadcrumb` to a `<ul>` tag, then add `breadcrumb__link` to all its children `<li>`:
+
+```html
+<ul class="breadcrumb">
+    <li class="breadcrumb__item"><a href="#">Docs</a></li>
+    <li class="breadcrumb__item"><a href="#">Components</a></li>
+    <li class="breadcrumb__item make-active">Buttons</li>
+</ul>
+```
+
+The `breadcrumb__item` class comes with one modifiers: `make-active`, which the effect is written below:
+
+| __Modifiers__ | __Effect__                                           |
+| ------------- | ---------------------------------------------------- |
+| `make-active` | Alters the font weight and color of the active item. |
+
+---
 ### __Cards__
 Cards allow the user to create a box around several elements. Cards contain 3 different "panels":
 the header, the body, and the footer. You can create a card by adding the class `card` to a `<div>`
@@ -28,6 +47,7 @@ respective usage. The example below shows how to properly create a card:
     </div>
 </div>
 ```
+
 __Note:__ The use of an `<img>` element is optional elements; and if you wish to use an image,
 in the `card__body`, you don't have to add a `card__image` class to it, unless you want to
 keep it semantically consistent. In the same way, you don't have to add `card__footer__item`
