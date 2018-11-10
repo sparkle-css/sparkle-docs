@@ -89,11 +89,13 @@ Lastly, you can use a `<div>` tag with class `buttons` in order to group button 
 </div>
 ```
 
-There is only one modifier for a button group:
+The following classes are modifiers for a button group:
 
-| __Modifiers__ | __Effect__                                                                      |
-| ------------- | ------------------------------------------------------------------------------- |
-| `make-solid`  | It allows you to remove the gaps between each button elements within the group. |
+| __Modifiers__   | __Effect__                                                                      |
+| --------------- | ------------------------------------------------------------------------------- |
+| `make-solid`    | It allows you to remove the gaps between each button elements within the group. |
+| `make-centered` | It allows you to center the button group within a container.                    |
+| `make-right`    | It allows you to place the button group to the right side of a container.       |
 
 ---
 ### __Loaders__
@@ -106,7 +108,7 @@ elements, such as buttons.
 <div class="loader [make-$type] [make-$size]"></div>
 ```
 
-The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
+The `make-$type` is optional, and `$type` represents one of the following modifiers:
 
 | __Modifiers__  | __Effect__                                                       |
 | -------------- | ---------------------------------------------------------------- |
