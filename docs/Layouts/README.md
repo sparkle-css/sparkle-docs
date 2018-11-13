@@ -104,7 +104,7 @@ one of the following modifiers:
 | `make-thirds`         | Fractional equivalent of `make-8`.                          |
 | `make-fourths`        | Fractional equivalent of `make-9`.                          |
 | `make-sixths`         | Fractional equivalent of `make-10`.                         |
-| `make-twelths`        | Fractional equivalent of `make-11`.                         |
+| `make-twelfths`       | Fractional equivalent of `make-11`.                         |
 | `make-full`           | Fractional equivalent of `make-12`.                         |
 
 Similarly to `make-$type`, the `make-offset-$type` modifier represents one of the following modifiers:
@@ -120,7 +120,7 @@ Similarly to `make-$type`, the `make-offset-$type` modifier represents one of th
 | `make-offset-thirds`                | Fractional equivalent of `make-offset-8`.                                  |
 | `make-offset-fourths`               | Fractional equivalent of `make-offset-9`.                                  |
 | `make-offset-sixths`                | Fractional equivalent of `make-offset-10`.                                 |
-| `make-offset-twelths`               | Fractional equivalent of `make-offset-11`.                                 |
+| `make-offset-twelfths`              | Fractional equivalent of `make-offset-11`.                                 |
 | `make-offset-full`                  | Fractional equivalent of `make-offset-12`.                                 |
 
 You can also make the columns resize according to a specific screen breakpoint by adding one of the following
