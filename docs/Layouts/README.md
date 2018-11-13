@@ -268,7 +268,11 @@ _Description coming soon..._
 _Description coming soon..._
 
 ```html
-<table class="table [make-scrollable] [make-hoverable]">
+<table class="table [make-default] [make-striped] [make-hoverable]">
+    <!-- CAPTION (Optional) -->
+    <caption>Table using &lt;table&gt;</caption>
+
+    <!-- HEADER -->
     <thead>
         <tr>
             <th>Name</th>
@@ -276,8 +280,10 @@ _Description coming soon..._
             <th>Profession</th>
         </tr>
     </thead>
+
+    <!-- BODY -->
     <tbody>
-        <tr>
+        <tr class="[make-selected]">
             <td>John Doe</td>
             <td>1234</td>
             <td>Web Developer, UX Designer</td>
@@ -289,6 +295,8 @@ _Description coming soon..._
             <td>Professional Speaker, Advertiser</td>
         </tr>
     </tbody>
+
+    <!-- FOOTER (Optional) -->
     <tfoot>
         <tr>
             <th>Name</th>
@@ -299,9 +307,55 @@ _Description coming soon..._
 </table>
 ```
 
-The list below describe the table's modifiers and their effects:
+You can also use `<div>`s to create a table too!
 
-| __Modifiers__    | __Effect__                                                                                |
-| -----------------| ----------------------------------------------------------------------------------------- |
-| `make-hoverable` | Highlights the table row that is being hovered on.                                        |
-| `make-scrollable`| Allows the table to be scrolled on the __x-axis__ if the size of the screen is too small. |
+```html
+<div class="table [make-default] [make-striped] [make-hoverable]">
+    <!-- CAPTION (Optional) -->
+    <div class="table__caption">Table using &lt;div&gt;</div>
+
+    <!-- HEADER -->
+    <div class="table__header">
+        <div class="table__row">
+            <div class="table__cell">Name</div>
+            <div class="table__cell">ID</div>
+            <div class="table__cell">Profession</div>
+        </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="table__body">
+        <div class="table__row [make-selected]">
+            <div class="table__cell">John Doe</div>
+            <div class="table__cell">1234</div>
+            <div class="table__cell">Web Developer, UX Designer</div>
+        </div>
+        ...
+        <div class="table__row">
+            <div class="table__cell">Suzan Moore</div>
+            <div class="table__cell">ABCD</div>
+            <div class="table__cell">Professional Speaker, Advertiser</div>
+        </div>
+    </div>
+
+    <!-- FOOTER (Optional) -->
+    <div class="table__footer">
+        <div class="table__row">
+            <div class="table__cell">Name</div>
+            <div class="table__cell">ID</div>
+            <div class="table__cell">Profession</div>
+        </div>
+    </div>
+</div>
+```
+
+The table's optional modifiers and their effects are as followed:
+
+| __Modifiers__    | __Effect__                                                                       |
+| ---------------- | -------------------------------------------------------------------------------- |
+| `make-default`   | Adds a line at the bottom of each row, except the last.                          |
+| `make-striped`   | Adds a zebra-like styling to the table body.                                     |
+| `make-hoverable` | Highlights the table row that is being hovered on.                               |
+| `make-selected`  | Highlights the styled table row (must be applied to the row, and not the table). |
+
+__Note:__ All of the modifiers that are applicable to the `table` class can be combined altogether. The same modifiers are applied, whether you use the conventional `<table>` approach or the `<div>` approach.
