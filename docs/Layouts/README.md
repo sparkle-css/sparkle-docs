@@ -241,20 +241,18 @@ _Description coming soon..._
 
 ```html
 <nav class="nav [make-fixed]">
+    <!-- TOGGLER -->
     <input type="checkbox" id="id" class="nav__toggle">
     <label for="id"></label>
-    <div class="nav__brand">Brand</div>
-
-    <ul class="nav__menu">
+    <!-- BRAND -->
+    <div class="nav__brand">
+        Brand
+    </div>
+    <!-- MENU -->
+    <ul class="nav__menu [make-right]">
         <li class="nav__menu__item [make-active]"><a href="#">Link 1</a></li>
         <li class="nav__menu__item"><a href="#">Link 2</a></li>
         <li class="nav__menu__item"><a href="#">Link 3</a></li>
-    </ul>
-
-    <ul class="nav__menu make-right">
-        <li class="nav__menu__item"><a href="#">Link 4</a></li>
-        <li class="nav__menu__item"><a href="#">Link 5</a></li>
-        <li class="nav__menu__item"><a href="#">Link 6</a></li>
     </ul>
 </nav>
 ```
