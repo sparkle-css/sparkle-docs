@@ -11,8 +11,9 @@ _Description coming soon_.
 </label>
 ```
 
-The optional `make-inline` class allows the checkbox to be displayed inline. Each checkbox element
-must have the `make-inline` class in order to have them displayed on one line.
+| __Modifiers__ | __Effect__                                                                     |
+| --------------| ------------------------------------------------------------------------------ |
+| `make-inline` | Allows the `checkbox` to be displayed inline. Each `checkbox` element must have the `make-inline` class in order to have them displayed on one line. |
 
 ---
 ### __Radios__
@@ -25,8 +26,9 @@ _Description coming soon_.
 </label>
 ```
 
-The optional `make-inline` class allows the checkbox to be displayed inline. Each radio element
-must have the `make-inline` class in order to have them displayed on one line.
+| __Modifiers__ | __Effect__                                                                     |
+| --------------| ------------------------------------------------------------------------------ |
+| `make-inline` | Allows the `radio` to be displayed inline. Each `radio` element must have the `make-inline` class in order to have them displayed on one line. |
 
 ---
 ### __Switches__
