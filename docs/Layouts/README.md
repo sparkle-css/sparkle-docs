@@ -242,11 +242,11 @@ _Description coming soon..._
 ```html
 <nav class="nav [make-fixed]">
     <!-- TOGGLER -->
-    <input type="checkbox" id="id" class="nav__toggle">
-    <label for="id"></label>
+    <input type="checkbox" id="id_name">
+    <label for="id_name" class="nav__toggle"></label>
     <!-- BRAND -->
     <div class="nav__brand">
-        Brand
+        // Body of element goes here
     </div>
     <!-- MENU -->
     <ul class="nav__menu [make-right]">
