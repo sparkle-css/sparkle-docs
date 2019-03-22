@@ -6,8 +6,8 @@ _Description coming soon_.
 
 ```html
 <label class="checkbox [make-inline]">
-    <input type="checkbox" class="checkbox__toggle">
-    <i class="checkbox__icon"></i>
+    <input type="checkbox" class="checkbox-toggle">
+    <i class="checkbox-icon"></i>
 </label>
 ```
 
@@ -21,8 +21,8 @@ _Description coming soon_.
 
 ```html
 <label class="radio [make-inline]">
-    <input type="radio" class="radio__toggle">
-    <i class="radio__icon"></i>
+    <input type="radio" class="radio-toggle">
+    <i class="radio-icon"></i>
 </label>
 ```
 
@@ -36,9 +36,9 @@ _Description coming soon_.
 
 ```html
 <label class="switch">
-    <input type="checkbox" class="switch__toggle">
-    <i class="switch__handle"></i>
-    <i class="switch__label"></i>
+    <input type="checkbox" class="switch-toggle">
+    <i class="switch-handle"></i>
+    <i class="switch-label"></i>
 </label>
 ```
 *__Note:__* At the moment, Sparkle doesn't offer the possibility to make the Switches inline. This feature
@@ -106,19 +106,19 @@ Form groups allow the user to prepend or append a button to an input field, as s
 
 ```html
 <!-- Prepend -->
-<div class="input__addon">
+<div class="input-addon">
     <button class="button">Button</button>
     <input type="text" class="input">
 </div>
 
 <!-- Append -->
-<div class="input__addon">
+<div class="input-addon">
     <input type="text" class="input">
     <button class="button">Button</button>
 </div>
 
 <!-- Both -->
-<div class="input__addon">
+<div class="input-addon[s]">
     <button class="button">Button 1</button>
     <input type="text" class="input">
     <button class="button">Button 2</button>

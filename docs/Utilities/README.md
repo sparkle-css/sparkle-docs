@@ -1,8 +1,20 @@
 # Utilities
 ## The additional functionalities for optimum designs.
 
+### __Backgrounds__ [NEW in 3.0.0]
+
+| __Modifiers__             | __Effect__                                                           |
+| ------------------------- | -------------------------------------------------------------------- |
+| `make-background-primary` | Changes the background of the current container to `$color-primary`. |
+| `make-background-info`    | Changes the background of the current container to `$color-info`.    |
+| `make-background-success` | Changes the background of the current container to `$color-success`. |
+| `make-background-warning` | Changes the background of the current container to `$color-warning`. |
+| `make-background-danger`  | Changes the background of the current container to `$color-danger`.  |
+| `make-background-light`   | Changes the background of the current container to `$color-light`.   |
+| `make-background-dark`    | Changes the background of the current container to `$color-dark`.    |
+
+---
 ### __Displays__
-_Description coming soon..._
 
 | __Modifiers__               | __Effect__                                                 |
 | --------------------------- | ---------------------------------------------------------- |
@@ -13,8 +25,25 @@ _Description coming soon..._
 | `make-display-inline-flex`  | Allows the container to behave as an inline-flex element.  |
 
 ---
+### __Elevations__ [NEW in v3.0.0]
+
+| __Modifiers__            | __Effect__                                                                           |
+| ------------------------ | ------------------------------------------------------------------------------------ |
+| `make-hoverable`         | Creates a box-shadow under the container when it is _not_ hovered upon.              |
+| `make-hoverable-high`    | Creates a bigger box-shadow under the container when it is _not_ hovered upon.       |
+| `make-hoverable-higher`  | Creates an even bigger box-shadow under the container when it is _not_ hovered upon. |
+| `make-hoverable-highest` | Creates a much bigger box-shadow under the container when it is _not_ hovered upon.  |
+| `make-raised`            | Creates a permanent box-shadow under the container.                                  |
+| `make-raised-high`       | Creates a bigger permanent box-shadow under the container element.                   |
+| `make-raised-higher`     | Creates an even bigger permanent box-shadow under the container.                     |
+| `make-raised-highest`    | Creates a much bigger permanent box-shadow under the container.                      |
+| `make-raisable`          | Creates a box-shadow under the container when it is hovered upon.                    |
+| `make-raisable-high`     | Creates a bigger box-shadow under the container when it is hovered upon.             |
+| `make-raisable-higher`   | Creates an even bigger box-shadow under the container when it is hovered upon.       |
+| `make-raisable-highest`  | Creates a much bigger box-shadow under the container when it is hovered upon.        |
+
+---
 ### __Placements__
-_Description coming soon..._
 
 | __Modifiers__              | __Effect__                                                                                |
 | -------------------------- | ----------------------------------------------------------------------------------------- |
@@ -38,7 +67,6 @@ _Description coming soon..._
 
 ---
 ### __Spacings__
-_Description coming soon..._
 
 | __Modifiers__                | __Effect__                                                                                           |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -61,7 +89,6 @@ _Description coming soon..._
 
 ---
 ### __Visibilities__
-_Description coming soon..._
 
 | __Modifiers__                 | __Effect__                                                                     |
 | ----------------------------- | ------------------------------------------------------------------------------ |
@@ -88,7 +115,6 @@ _Description coming soon..._
 
 ---
 ### __Extra__
-_Description coming soon..._
 
 | __Modifiers__           | __Effect__                                                                             |
 | ----------------------- | -------------------------------------------------------------------------------------- |

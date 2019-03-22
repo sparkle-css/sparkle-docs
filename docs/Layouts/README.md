@@ -3,17 +3,17 @@
 
 ### __Breadcrumbs__
 Breadcrumbs, like navigation bars, allow the user to easily determine where he is at within a website's site map
-and go back to a previous page within a chain link. In order to create a breadcrumb, you can add the class `breadcrumb` to a `<ul>` tag, then add `breadcrumb__link` to all its children `<li>`:
+and go back to a previous page within a chain link. In order to create a breadcrumb, you can add the class `breadcrumb` to a `<ul>` tag, then add `breadcrumb-item` to all its children `<li>`:
 
 ```html
 <ul class="breadcrumb">
-    <li class="breadcrumb__item"><a href="#">Docs</a></li>
-    <li class="breadcrumb__item"><a href="#">Components</a></li>
-    <li class="breadcrumb__item make-active">Buttons</li>
+    <li class="breadcrumb-item"><a href="#">Docs</a></li>
+    <li class="breadcrumb-item"><a href="#">Components</a></li>
+    <li class="breadcrumb-item make-active">Buttons</li>
 </ul>
 ```
 
-The `breadcrumb__item` class comes with one modifiers: `make-active`, which the effect is written below:
+The `breadcrumb-item` class comes with one modifiers: `make-active`, which the effect is written below:
 
 | __Modifiers__ | __Effect__                                           |
 | ------------- | ---------------------------------------------------- |
@@ -23,35 +23,26 @@ The `breadcrumb__item` class comes with one modifiers: `make-active`, which the 
 ### __Cards__
 Cards allow the user to create a box around several elements. Cards contain 3 different "panels":
 the header, the body, and the footer. You can create a card by adding the class `card` to a `<div>`
-element, then separate each panel by adding `card__header`, `card__body`, or `card__footer` to its
+element, then separate each panel by adding `card-header`, `card-body`, or `card-footer` to its
 respective usage. The example below shows how to properly create a card:
 
 ```html
 <div class="card">
-    <div class="card__header">
-        <div class="card__title">Card Title</div>
-        <div class="card__subtitle">Card Subtitle</div>
-    </div>
-    <div class="card__body">
-        <img src="#" alt="#" class="card__image">
+    <div class="card-header">
         // Body of element
     </div>
-    <div class="card__footer">
-        <div class="card__footer__item">
-            // Body of element
-        </div>
-        ...
-        <div class="card__footer__item">
-            // Body of element
-        </div>
+    <div class="card-body">
+        <img src="#" alt="#" class="card-image">
+        // Body of element
+    </div>
+    <div class="card-footer">
+        // Body of element
     </div>
 </div>
 ```
 
 __Note:__ The use of an `<img>` element is optional elements; and if you wish to use an image,
-in the `card__body`, you don't have to add a `card__image` class to it, unless you want to
-keep it semantically consistent. In the same way, you don't have to add `card__footer__item`
-classes to `<div>` elements, unless you want to separate each footer element in its own "box".
+simply add the `card-image` class to it. Unlike previous iterations of this element, you can now place the card image anywhere within the `card` (i.e: in the `card-header`, `card-body`, and even `card-footer`); and the `card-image` class is now required to use the proper image styling inside a `card` container.
 
 ---
 ### __Containers__
@@ -126,13 +117,13 @@ Similarly to `make-$type`, the `make-offset-$type` modifier represents one of th
 You can also make the columns resize according to a specific screen breakpoint by adding one of the following
 modifiers into the `make-$type`:
 
-| __Modifiers__    | __Effect__                                                                                        |
-| ---------------- | ------------------------------------------------------------------------------------------------- |
-| `make-$i-xsmall` | Creates a column that spans $i/12 of the created row of the screen width set by `$bp-none`.       |
-| `make-$i-small`  | Creates a column that spans $i/12 of the created row of the screen width set by `$bp-small`.      |
-| `make-$i-medium` | Creates a column that spans $i/12 of the created row of the screen width set by `$bp-medium`.     |
-| `make-$i-large`  | Creates a column that spans $i/12 of the created row of the screen width set by `$bp-large`.      |
-| `make-$i-xlarge` | Creates a column that spans $i/12 of the created row of the screen width set by `$bp-widescreen`. |
+| __Modifiers__     | __Effect__                                                                                        |
+| ----------------- | ------------------------------------------------------------------------------------------------- |
+| `make-$i-smaller` | Creates a column that spans $i/12 of the created row of the screen width set by `$bp-none`.       |
+| `make-$i-small`   | Creates a column that spans $i/12 of the created row of the screen width set by `$bp-small`.      |
+| `make-$i-medium`  | Creates a column that spans $i/12 of the created row of the screen width set by `$bp-medium`.     |
+| `make-$i-large`   | Creates a column that spans $i/12 of the created row of the screen width set by `$bp-large`.      |
+| `make-$i-larger`  | Creates a column that spans $i/12 of the created row of the screen width set by `$bp-widescreen`. |
 
 __Note:__ These breakpoint modifiers are also applicable to the offsets (ex.: `make-offset-4-small`). The value `$i` represents either the numerical value of the span of the column (1 to 12) or the fractional values (ex.: `make-fourth-medium`).
 
@@ -147,15 +138,15 @@ In order to create it, simply add `hero` to a `<div>` element
 
 ```html
 <div class="hero make-$size [make-$type]">
-    <header class="hero__header">
+    <header class="hero-header">
         // Body of element
     </header>
-    <div class="hero__body">
+    <div class="hero-body">
         <div class="wrapper">
             // Body of element
         </div>
     </div>
-    <div class="hero__footer">
+    <div class="hero-footer">
         // Body of element
     </div>
 </div>
@@ -197,16 +188,16 @@ heavily suggested if using the aforementioned modifiers and must be placed __ins
 
 ```html
 <div class="media">
-    <div class="media__profile">
+    <div class="media-profile">
         <img src="#" alt="#">
     </div>
-    <div class="media__body">
-        <p class="media__title">John Doe</p>
-        <p class="media__subtitle">Web Developer | UX Designer</p>
+    <div class="media-body">
         // Body of element
     </div>
 </div>
 ```
+
+__Note:__ As of version 3.0.0, the `media__title` and `media__subtitle` have been deprecated to allow user to put his own title/subtitle styling to the element.
 
 ---
 ### __Menu__
@@ -214,24 +205,24 @@ heavily suggested if using the aforementioned modifiers and must be placed __ins
 
 ```html
 <div class="menu">
-    <p class="menu__group">Group 1</p>
-    <a href="#" class="menu__item">Menu Item 1</a>
-    <a href="#" class="menu__item">Menu Item 2</a>
-    <a href="#" class="menu__item">Menu Item 3</a>
-    <p class="menu__group">Group 2</p>
-    <a href="#" class="menu__item">Menu Item 4</a>
-    <a href="#" class="menu__item">Menu Item 5</a>
+    <p class="menu-group">Group 1</p>
+    <a href="#" class="menu-item">Menu Item 1</a>
+    <a href="#" class="menu-item">Menu Item 2</a>
+    <a href="#" class="menu-item">Menu Item 3</a>
+    <p class="menu-group">Group 2</p>
+    <a href="#" class="menu-item">Menu Item 4</a>
+    <a href="#" class="menu-item">Menu Item 5</a>
     <div class="submenu">
-        <a href="#" class="menu__item">Submenu Item 1</a>
-        <a href="#" class="menu__item">Submenu Item 2</a>
+        <a href="#" class="menu-item">Submenu Item 1</a>
+        <a href="#" class="menu-item">Submenu Item 2</a>
         <div class="submenu">
-            <a href="" class="menu__item">Sub-Submenu</a>
+            <a href="" class="menu-item">Sub-Submenu</a>
         </div>
     </div>
-    <a href="#" class="menu__item">Menu Item 6</a>
-    <p class="menu__group">Group 3</p>
-    <a href="#" class="menu__item">Menu Item 7</a>
-    <a href="#" class="menu__item">Menu Item 8</a>
+    <a href="#" class="menu-item">Menu Item 6</a>
+    <p class="menu-group">Group 3</p>
+    <a href="#" class="menu-item">Menu Item 7</a>
+    <a href="#" class="menu-item">Menu Item 8</a>
 </div>
 ```
 
@@ -243,16 +234,16 @@ _Description coming soon..._
 <nav class="nav [make-fixed]">
     <!-- TOGGLER -->
     <input type="checkbox" id="id_name">
-    <label for="id_name" class="nav__toggle"></label>
+    <label for="id_name" class="nav-toggle"></label>
     <!-- BRAND -->
-    <div class="nav__brand">
+    <div class="nav-brand">
         // Body of element goes here
     </div>
     <!-- MENU -->
-    <ul class="nav__menu [make-right]">
-        <li class="nav__menu__item [make-active]"><a href="#">Link 1</a></li>
-        <li class="nav__menu__item"><a href="#">Link 2</a></li>
-        <li class="nav__menu__item"><a href="#">Link 3</a></li>
+    <ul class="nav-menu [make-right]">
+        <li class="nav-menu-item [make-active]"><a href="#">Link 1</a></li>
+        <li class="nav-menu-item"><a href="#">Link 2</a></li>
+        <li class="nav-menu-item"><a href="#">Link 3</a></li>
     </ul>
 </nav>
 ```
@@ -265,7 +256,7 @@ _Description coming soon..._
 
 ---
 ### __Tables__
-_Description coming soon..._
+Tables allow the user to display a series of data on the screen. Sparkle does, for the most part, the heavy lifting for you by styling the table in an efficient way. It even goes the extra mile by allowing the user to use either two (2) different approaches to create a table: the traditional way, or the unconventional way. In Sparkle, tables are styled using flexbox.
 
 ```html
 <table class="table [make-default] [make-striped] [make-hoverable]">
@@ -312,38 +303,38 @@ You can also use `<div>`s to create a table too!
 ```html
 <div class="table [make-default] [make-striped] [make-hoverable]">
     <!-- CAPTION (Optional) -->
-    <div class="table__caption">Table using &lt;div&gt;</div>
+    <div class="table-caption">Table using &lt;div&gt;</div>
 
     <!-- HEADER -->
-    <div class="table__header">
-        <div class="table__row">
-            <div class="table__cell">Name</div>
-            <div class="table__cell">ID</div>
-            <div class="table__cell">Profession</div>
+    <div class="table-header">
+        <div class="table-row">
+            <div class="table-cell">Name</div>
+            <div class="table-cell">ID</div>
+            <div class="table-cell">Profession</div>
         </div>
     </div>
 
     <!-- BODY -->
-    <div class="table__body">
-        <div class="table__row [make-selected]">
-            <div class="table__cell">John Doe</div>
-            <div class="table__cell">1234</div>
-            <div class="table__cell">Web Developer, UX Designer</div>
+    <div class="table-body">
+        <div class="table-row [make-selected]">
+            <div class="table-cell">John Doe</div>
+            <div class="table-cell">1234</div>
+            <div class="table-cell">Web Developer, UX Designer</div>
         </div>
         ...
-        <div class="table__row">
-            <div class="table__cell">Suzan Moore</div>
-            <div class="table__cell">ABCD</div>
-            <div class="table__cell">Professional Speaker, Advertiser</div>
+        <div class="table-row">
+            <div class="table-cell">Suzan Moore</div>
+            <div class="table-cell">ABCD</div>
+            <div class="table-cell">Professional Speaker, Advertiser</div>
         </div>
     </div>
 
     <!-- FOOTER (Optional) -->
-    <div class="table__footer">
-        <div class="table__row">
-            <div class="table__cell">Name</div>
-            <div class="table__cell">ID</div>
-            <div class="table__cell">Profession</div>
+    <div class="table-footer">
+        <div class="table-row">
+            <div class="table-cell">Name</div>
+            <div class="table-cell">ID</div>
+            <div class="table-cell">Profession</div>
         </div>
     </div>
 </div>
