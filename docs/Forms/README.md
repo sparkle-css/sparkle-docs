@@ -53,7 +53,7 @@ This is probably the most popular and important aspect of any forms. Sparkle all
 <label for="#" class="label">Label</label>
 
 <!-- Inputs -->
-<input type="text" class="input [make-$type]">
+<input type="text" class="input [make-$type] [make-$size] [make-rounded]">
 
 <!-- Textarea -->
 <textarea class="textarea [make-$type]"></textarea>
@@ -70,14 +70,29 @@ This is probably the most popular and important aspect of any forms. Sparkle all
 
 The `make-$type` modifier is optional, and the table below represents the list of the available modifiers:
 
-| __Modifiers__  | __Effect__                                                                    |
-| ---------------| ------------------------------------------------------------------------------|
-| `make-primary` | Creates an input field with an outline with the color set by `$color-primary`.|
-| `make-info`    | Creates an input field with an outline with the color set by `$color-info`.   |
-| `make-success` | Creates an input field with an outline with the color set by `$color-success`.|
-| `make-warning` | Creates an input field with an outline with the color set by `$color-warning`.|
-| `make-warning` | Creates an input field with an outline with the color set by `$color-warning`.|
-| `make-danger`  | Creates an input field with an outline with the color set by `$color-danger`. |
+| __Modifiers__  | __Effect__                                                                     |
+| ---------------| ------------------------------------------------------------------------------ |
+| `make-primary` | Creates an input field with an outline with the color set by `$color-primary`. |
+| `make-info`    | Creates an input field with an outline with the color set by `$color-info`.    |
+| `make-success` | Creates an input field with an outline with the color set by `$color-success`. |
+| `make-warning` | Creates an input field with an outline with the color set by `$color-warning`. |
+| `make-warning` | Creates an input field with an outline with the color set by `$color-warning`. |
+| `make-danger`  | Creates an input field with an outline with the color set by `$color-danger`.  |
+
+Furthermore, the `make-$size` modifier is optional, and the table below represents the list of the available modifiers:
+
+| __Modifiers__  | __Effect (NEW in 3.0.0)__                                       |
+| ---------------| --------------------------------------------------------------- |
+| `make-smaller` | Creates an input field with a very small padding and font-size. |
+| `make-small`   | Creates an input field with a small padding and font-size.      |
+| `make-large`   | Creates an input field with a large padding and font-size.      |
+| `make-larger`  | Creates an input field with a larger padding and font-size.     |
+
+Lastly, the `make-rounded` modifier class allows the user to create a rounded edge on the input field:
+
+| __Modifiers__  | __Effect (NEW in 3.0.0)__               |
+| ---------------| --------------------------------------- |
+| `make-rounded` | Adds a rounded edge on the input field. |
 
 __Note:__ The `input` class is also used to style the following:
 - `type="password"`
