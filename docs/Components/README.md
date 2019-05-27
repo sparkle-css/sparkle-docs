@@ -12,15 +12,15 @@ Alerts are used to display information on your screen. Depending on the type of 
 
 The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
 
-| __Modifiers__  | __Effect__                                                                                    |
-| -------------- | --------------------------------------------------------------------------------------------- |
-| `make-primary` | The BG color of the `alert` is set to `$color-primary`, and the font color to `$color-dark`.  |
-| `make-info`    | The BG color of the `alert` is set to `$color-info`, and the font color to `$color-light`.    |
-| `make-success` | The BG color of the `alert` is set to `$color-success`, and the font color to `$color-light`. |
-| `make-warning` | The BG color of the `alert` is set to `$color-warning`, and the font color to `$color-dark`.  |
-| `make-danger`  | The BG color of the `alert` is set to `$color-danger`, and the font color to `$color-light`.  |
-| `make-light`   | The BG color of the `alert` is set to `$color-light`, and the font color to `$color-dark`.    |
-| `make-dark`    | The BG color of the `alert` is set to `$color-dark`, and the font color to `$color-light`.    |
+| __Modifiers__  | __Effect__                                              |
+| -------------- | ------------------------------------------------------- |
+| `make-primary` | The BG color of the `alert` is set to `$color-primary`. |
+| `make-info`    | The BG color of the `alert` is set to `$color-info`.    |
+| `make-success` | The BG color of the `alert` is set to `$color-success`. |
+| `make-warning` | The BG color of the `alert` is set to `$color-warning`. |
+| `make-danger`  | The BG color of the `alert` is set to `$color-danger`.  |
+| `make-light`   | The BG color of the `alert` is set to `$color-light`.   |
+| `make-dark`    | The BG color of the `alert` is set to `$color-dark`.    |
 
 ---
 ### __Blockquotes__
@@ -51,15 +51,15 @@ One of the most essential elements in a CSS framework: buttons. Sparkle allows y
 
 The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
 
-| __Modifiers__  | __Effect__                                                                                     |
-| -------------- | ---------------------------------------------------------------------------------------------- |
-| `make-primary` | The BG color of the `button` is set to `$color-primary`, and the font color to `$color-dark`.  |
-| `make-info`    | The BG color of the `button` is set to `$color-info`, and the font color to `$color-light`.    |
-| `make-success` | The BG color of the `button` is set to `$color-success`, and the font color to `$color-light`. |
-| `make-warning` | The BG color of the `button` is set to `$color-warning`, and the font color to `$color-dark`.  |
-| `make-danger`  | The BG color of the `button` is set to `$color-danger`, and the font color to `$color-light`.  |
-| `make-light`   | The BG color of the `button` is set to `$color-light`, and the font color to `$color-dark`.    |
-| `make-dark`    | The BG color of the `button` is set to `$color-dark`, and the font color to `$color-light`.    |
+| __Modifiers__  | __Effect__                                               |
+| -------------- | -------------------------------------------------------- |
+| `make-primary` | The BG color of the `button` is set to `$color-primary`. |
+| `make-info`    | The BG color of the `button` is set to `$color-info`.    |
+| `make-success` | The BG color of the `button` is set to `$color-success`. |
+| `make-warning` | The BG color of the `button` is set to `$color-warning`. |
+| `make-danger`  | The BG color of the `button` is set to `$color-danger`.  |
+| `make-light`   | The BG color of the `button` is set to `$color-light`.   |
+| `make-dark`    | The BG color of the `button` is set to `$color-dark`.    |
 
 The following modifiers can only be used if one of the `make-$type` is used:
 
@@ -158,15 +158,15 @@ You can use tags to allow you to identify or emphasize important information. On
 
 The `make-$type` modifier is optional, and `$type` represents one of the following modifiers:
 
-| __Modifiers__  | __Effect__                                                                                  |
-| -------------- | ------------------------------------------------------------------------------------------- |
-| `make-primary` | The BG color of the `tag` is set to `$color-primary`, and the font color to `$color-dark`.  |
-| `make-info`    | The BG color of the `tag` is set to `$color-info`, and the font color to `$color-light`.    |
-| `make-success` | The BG color of the `tag` is set to `$color-success`, and the font color to `$color-light`. |
-| `make-warning` | The BG color of the `tag` is set to `$color-warning`, and the font color to `$color-dark`.  |
-| `make-danger`  | The BG color of the `tag` is set to `$color-danger`, and the font color to `$color-light`.  |
-| `make-light`   | The BG color of the `tag` is set to `$color-light`, and the font color to `$color-dark`.    |
-| `make-dark`    | The BG color of the `tag` is set to `$color-dark`, and the font color to `$color-light`.    |
+| __Modifiers__  | __Effect__                                            |
+| -------------- | ----------------------------------------------------- |
+| `make-primary` | The BG color of the `tag` is set to `$color-primary`. |
+| `make-info`    | The BG color of the `tag` is set to `$color-info`.    |
+| `make-success` | The BG color of the `tag` is set to `$color-success`. |
+| `make-warning` | The BG color of the `tag` is set to `$color-warning`. |
+| `make-danger`  | The BG color of the `tag` is set to `$color-danger`.  |
+| `make-light`   | The BG color of the `tag` is set to `$color-light`.   |
+| `make-dark`    | The BG color of the `tag` is set to `$color-dark`.    |
 
 The following modifiers can only be used if one of the `make-$type` is used:
 

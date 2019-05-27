@@ -29,10 +29,10 @@
 
 | __Modifiers__            | __Effect__                                                                           |
 | ------------------------ | ------------------------------------------------------------------------------------ |
-| `make-hoverable`         | Creates a box-shadow under the container when it is _not_ hovered upon.              |
-| `make-hoverable-high`    | Creates a bigger box-shadow under the container when it is _not_ hovered upon.       |
-| `make-hoverable-higher`  | Creates an even bigger box-shadow under the container when it is _not_ hovered upon. |
-| `make-hoverable-highest` | Creates a much bigger box-shadow under the container when it is _not_ hovered upon.  |
+| `make-lowerable`         | Creates a box-shadow under the container when it is _not_ hovered upon.              |
+| `make-lowerable-high`    | Creates a bigger box-shadow under the container when it is _not_ hovered upon.       |
+| `make-lowerable-higher`  | Creates an even bigger box-shadow under the container when it is _not_ hovered upon. |
+| `make-lowerable-highest` | Creates a much bigger box-shadow under the container when it is _not_ hovered upon.  |
 | `make-raised`            | Creates a permanent box-shadow under the container.                                  |
 | `make-raised-high`       | Creates a bigger permanent box-shadow under the container element.                   |
 | `make-raised-higher`     | Creates an even bigger permanent box-shadow under the container.                     |

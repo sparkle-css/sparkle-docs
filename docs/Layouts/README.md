@@ -57,6 +57,13 @@ create a `<div>` element and give it a class of `wrapper`.
 </div>
 ```
 
+The `wrapper` class comes with two modifiers: `make-small` and `make-large`. Their effects are written below:
+
+| __Modifiers__ | __Effect__                                |
+| ------------- | ----------------------------------------- |
+| `make-small`  | The container's max-width becomes 960px.  |
+| `make-large`  | The container's max-width becomes 1440px. |
+
 ---
 ### __Grid__
 The grid (which is also your row) allows you to horizontally arrange your elements on the page, more so efficiently if it is used in conjunction with and inside the `wrapper`. In order to create a proper grid, you must create a parent `<div>` tag and give it a class of `columns`, and then create children `<div>` tags with a class of `column`. By default, Sparkle grid produces a grid with gutters: in order to remove them, you have to add the class `make-no-gaps` to the `columns`.

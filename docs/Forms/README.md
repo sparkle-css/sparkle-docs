@@ -2,7 +2,7 @@
 ## The elements essential to style a clean form UI.
 
 ### __Checkboxes__
-_Description coming soon_. 
+Checkboxes allow the users to toggle off and on a specific variable, in a form. In this framework, the checkbox is fully customized already, in order to remove the typical grey box.
 
 ```html
 <label class="checkbox [make-inline]">
@@ -17,7 +17,7 @@ _Description coming soon_.
 
 ---
 ### __Radios__
-_Description coming soon_.
+Radios allow the users to select one of many variables that pertain to a specific element. Along with its checkbox sibling, the radio is fully customized already, in order to remove the typical grey circle.
 
 ```html
 <label class="radio [make-inline]">
@@ -117,7 +117,7 @@ parent `<div>` element.
 
 ---
 ### __Input Addons__
-Form groups allow the user to prepend or append a button to an input field, as seen in some modern forms or search bars, in many popular websites. In order to create an input addon, simply create a `<div>` element with a class `input__addon`, then add, before or after (or both), a `<button>` element with a class of `button`, as seen in the examples below:
+Form groups allow the user to prepend or append a button to an input field, as seen in some modern forms or search bars, in many popular websites. In order to create an input addon, simply create a `<div>` element with a class `input-addon`, then add, before or after (or both), a `<button>` element with a class of `button`, as seen in the examples below:
 
 ```html
 <!-- Prepend -->
