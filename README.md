@@ -1,6 +1,5 @@
 # Sparkle Documentation
 #### Current version: 3.0.0
-#### Docs version: 0.1.0
 The official __Sparkle.CSS__ framework documentation.
 
 ### __Sections__
